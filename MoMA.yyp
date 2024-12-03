@@ -34,6 +34,7 @@
   },
   "name":"MoMA",
   "resources":[
+    {"id":{"name":"todo","path":"notes/todo/todo.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "resourceType":"GMProject",

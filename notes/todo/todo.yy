@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"todo",
+  "name":"todo",
+  "parent":{
+    "name":"MoMA",
+    "path":"MoMA.yyp",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}
