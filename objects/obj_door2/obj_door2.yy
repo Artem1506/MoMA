@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":65,"eventType":5,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":68,"eventType":5,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_door2",
+  "eventList":[],
   "managed":true,
-  "name":"obj_player",
+  "name":"obj_door2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"lvl_objects",
+    "path":"folders/Objects/lvl_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"TestChar",
-    "path":"sprites/TestChar/TestChar.yy",
+    "name":"spr_door2_closed",
+    "path":"sprites/spr_door2_closed/spr_door2_closed.yy",
   },
   "spriteMaskId":null,
   "visible":true,
