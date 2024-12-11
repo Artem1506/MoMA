@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_healthBar",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_healthBar",
   "overriddenProperties":[],
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_healthBar_full",
-    "path":"sprites/spr_healthBar_full/spr_healthBar_full.yy",
+    "name":"spr_lamp_off",
+    "path":"sprites/spr_lamp_off/spr_lamp_off.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -43,6 +43,7 @@
   },
   "name":"MoMA",
   "resources":[
+    {"id":{"name":"f_rus","path":"fonts/f_rus/f_rus.yy",},},
     {"id":{"name":"todo","path":"notes/todo/todo.yy",},},
     {"id":{"name":"obj_door1","path":"objects/obj_door1/obj_door1.yy",},},
     {"id":{"name":"obj_door2","path":"objects/obj_door2/obj_door2.yy",},},

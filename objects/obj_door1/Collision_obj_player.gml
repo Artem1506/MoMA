@@ -1,8 +1,9 @@
-/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
+/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
 /// @DnDVersion : 1
-/// @DnDHash : 03007F99
-/// @DnDArgument : "key" "ord("E")"
-var l03007F99_0;l03007F99_0 = keyboard_check_pressed(ord("E"));if (l03007F99_0){}
+/// @DnDHash : 6A2D1389
+/// @DnDArgument : "key" "vk_tab"
+/// @DnDArgument : "not" "1"
+var l6A2D1389_0;l6A2D1389_0 = keyboard_check(vk_tab);if (!l6A2D1389_0){}
 
 /// @DnDAction : YoYo Games.Instances.Set_Sprite
 /// @DnDVersion : 1
