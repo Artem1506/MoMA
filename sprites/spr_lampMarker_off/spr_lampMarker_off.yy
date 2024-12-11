@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_lampMarker_off",
   "bboxMode":0,
-  "bbox_bottom":1227,
-  "bbox_left":245,
-  "bbox_right":1496,
+  "bbox_bottom":81,
+  "bbox_left":24,
+  "bbox_right":73,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":1361,
+  "height":91,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"d1bc6666-6b66-4717-9229-93ef1a51ff76","blendMode":0,"displayName":"default","isLocked":false,"name":"d1bc6666-6b66-4717-9229-93ef1a51ff76","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":1497,
+  "width":100,
 }

@@ -3,5 +3,8 @@
 
 global.playerName = "Арчибальт Блэк";
 global.playerHp = 2;
+global.playerIsShadow = true;
+global.playerIsInteract = false;
+///global.playerIsVisible = false;
 
 

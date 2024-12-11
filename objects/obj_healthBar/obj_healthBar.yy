@@ -13,7 +13,7 @@
     "path":"folders/Objects/hud_element.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_lamp_off",
-    "path":"sprites/spr_lamp_off/spr_lamp_off.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_lightMarker",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_lightMarker",
   "overriddenProperties":[],
@@ -10,7 +13,7 @@
     "path":"folders/Objects/hud_element.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -27,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_lampMarker_off",
-    "path":"sprites/spr_lampMarker_off/spr_lampMarker_off.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

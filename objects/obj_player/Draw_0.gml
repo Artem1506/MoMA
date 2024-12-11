@@ -4,3 +4,5 @@
 draw_self();
 
 draw_text(x,y,global.playerHp);
+draw_text(x-50,y,global.playerIsInteract);
+
