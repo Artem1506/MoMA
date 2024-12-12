@@ -7,4 +7,8 @@ global.playerIsShadow = true;
 global.playerIsInteract = false;
 ///global.playerIsVisible = false;
 
+animStayR = spr_v1PlayerStayR;
+animStayL = spr_v1PlayerStayL;
+
+
 

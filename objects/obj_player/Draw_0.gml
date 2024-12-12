@@ -5,4 +5,7 @@ draw_self();
 
 draw_text(x,y,global.playerHp);
 draw_text(x-50,y,global.playerIsInteract);
+draw_text(x+50,y,global.playerIsShadow);
+draw_text(x,y+10,animStayR);
 
+	
