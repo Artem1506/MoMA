@@ -1,7 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-visible = false;
+draw_sprite(sprite_index, 0, x + offset_x, y + offset_y);
 
-cell_type = "none";   
-item = noone;         

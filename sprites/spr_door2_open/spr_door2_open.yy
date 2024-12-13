@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_door2_open",
-  "bboxMode":0,
-  "bbox_bottom":64,
+  "bboxMode":2,
+  "bbox_bottom":1,
   "bbox_left":0,
-  "bbox_right":34,
+  "bbox_right":1,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,

@@ -2,26 +2,35 @@
 // You can write your code in this editor
 
 visible = true;
+sprite_index = spr_inventory;
+offset_x = 0;
+offset_y = 0;
 
-var cell_width = 32;  // Ширина ячейки
-var cell_height = 32; // Высота ячейки
-var rows = 2;         // Количество строк
-var cols = 2;         // Количество столбцов
-var start_x = x;      // Начальная координата X для поля
-var start_y = y;      // Начальная координата Y для поля
+
+var cellWidth = 32;  
+var cellHeight = 32; 
+var cellSpacing_x = 32;  
+var cellSpacing_y = 16;
+var rows = 2;         
+var cols = 2;         
+var start_x = x-50;    
+var start_y = y-100;    
 
 // Создаем ячейки
 for (var i = 0; i < rows; i++) {
     for (var j = 0; j < cols; j++) {
-        var cell = instance_create_layer(start_x + j * cell_width, start_y + i * cell_height, "Instances", obj_invCell);
+		var cell_x = start_x + j * (cellWidth + cellSpacing_x);
+		var cell_y = start_y + i * (cellHeight + cellSpacing_y);
+        
+		var cell = instance_create_layer(cell_x, cell_y, "HUD", obj_invCell);
         
         // Назначаем тип ячейке
         if (i == 0 && j == 0) {
-            cell.cell_type = "r_hand";  // Правая рука
+            cell.cell_type = "r_hand"; 
         } else if (i == 0 && j == 1) {
-            cell.cell_type = "l_hand";  // Левая рука
+            cell.cell_type = "l_hand"; 
         } else {
-            cell.cell_type = "none";    // Без типа
+            cell.cell_type = "none"; 
         }
     }
 }
