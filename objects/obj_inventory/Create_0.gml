@@ -14,7 +14,9 @@ var cellSpacing_y = 16;
 var rows = 2;         
 var cols = 2;         
 var start_x = x-50;    
-var start_y = y-100;    
+var start_y = y-100;  
+
+inventory_cells = [];
 
 // Создаем ячейки
 for (var i = 0; i < rows; i++) {
@@ -32,6 +34,7 @@ for (var i = 0; i < rows; i++) {
         } else {
             cell.cell_type = "none"; 
         }
+		inventory_cells[i * cols + j] = cell;
     }
 }
 
