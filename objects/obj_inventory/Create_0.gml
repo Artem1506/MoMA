@@ -7,8 +7,8 @@ offset_x = 0;
 offset_y = 0;
 
 
-var cellWidth = 32;  
-var cellHeight = 32; 
+cellWidth = 32;  
+cellHeight = 32; 
 var cellSpacing_x = 32;  
 var cellSpacing_y = 16;
 var rows = 2;         

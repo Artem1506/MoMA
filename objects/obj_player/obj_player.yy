@@ -47,7 +47,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_v1PlayerStayR",
+    "path":"sprites/spr_v1PlayerStayR/spr_v1PlayerStayR.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
