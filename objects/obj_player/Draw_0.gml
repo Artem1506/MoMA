@@ -5,5 +5,11 @@ draw_self();
 
 draw_text(x,y+45,"animName" + string(animStayR)); 
 
-
-	
+for (var i = 0; i < array_length_1d(obj_inventory.inventory_cells); i++) {
+        var cell = obj_inventory.inventory_cells[i]; // Получаем ячейку
+        
+        // Если ячейка не пуста и содержит предмет, добавляем информацию о предмете
+        if (cell.item == "Трость") {
+            animStayL = spr_playerStayL;
+        }
+}

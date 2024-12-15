@@ -50,8 +50,10 @@
   "resources":[
     {"id":{"name":"f_rus_default","path":"fonts/f_rus_default/f_rus_default.yy",},},
     {"id":{"name":"n_info","path":"notes/n_info/n_info.yy",},},
+    {"id":{"name":"n_todo","path":"notes/n_todo/n_todo.yy",},},
     {"id":{"name":"obj_door1","path":"objects/obj_door1/obj_door1.yy",},},
     {"id":{"name":"obj_door2","path":"objects/obj_door2/obj_door2.yy",},},
+    {"id":{"name":"obj_dragItem","path":"objects/obj_dragItem/obj_dragItem.yy",},},
     {"id":{"name":"obj_healthBar","path":"objects/obj_healthBar/obj_healthBar.yy",},},
     {"id":{"name":"obj_invCell","path":"objects/obj_invCell/obj_invCell.yy",},},
     {"id":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},},

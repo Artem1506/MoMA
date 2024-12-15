@@ -2,12 +2,16 @@
 // You can write your code in this editor
 
 if (item != undefined) {
-	is_dragging = true;
-	dragItem = item;
-	//itemIco = noone; // если скрыто это и показать ячейке то при релизе лкм дропается с ошибкой
-	sprite_index = noone; //если скрыть это и показать строку 7, не переключается на исдрагинг фолс
-	drag_offset_x = mouse_x - x;
-	drag_offset_y = mouse_y - y;
+	drag_item = instance_create_layer(mouse_x, mouse_y, "Instances", obj_dragItem);
+	
+	drag_item.item = item;
+	drag_item.sprite_index = item.sprite_index;
+	
+	//is_dragging = true;
+	//dragItem = item;
+	//drag_offset_x = mouse_x - x;
+	//drag_offset_y = mouse_y - y;
 	item = undefined;
+	//item.sprite_index = noone;
 }
 
