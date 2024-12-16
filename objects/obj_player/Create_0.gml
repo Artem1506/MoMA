@@ -10,6 +10,8 @@ playerSpeed = 1;
 
 animStayR = spr_v1PlayerStayR;
 animStayL = spr_v1PlayerStayL;
+animWalkR = spr_v2PlayerWalkR;
+animWalkL = spr_v2PlayerWalkL;
 //todo добавить анимайи и обозвать их переменными
 
 

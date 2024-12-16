@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_door2",
+  "%Name":"obj_door_1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_door2",
+  "name":"obj_door_1",
   "overriddenProperties":[],
   "parent":{
     "name":"lvl_objects",
@@ -23,15 +23,20 @@
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
-  "physicsShapePoints":[],
+  "physicsShapePoints":[
+    {"x":0.0,"y":0.0,},
+    {"x":33.0,"y":0.0,},
+    {"x":33.0,"y":95.0,},
+    {"x":0.0,"y":95.0,},
+  ],
   "physicsStartAwake":true,
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_door2_closed",
-    "path":"sprites/spr_door2_closed/spr_door2_closed.yy",
+    "name":"spr_door1_closed",
+    "path":"sprites/spr_door1_closed/spr_door1_closed.yy",
   },
   "spriteMaskId":null,
   "visible":true,

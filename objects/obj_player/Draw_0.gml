@@ -3,15 +3,15 @@
 
 draw_self();
 
-draw_text(x,y+45,"animName" + string(animStayR)); 
+//draw_text(x,y+45,"animName" + string(animStayR)); 
 
-for (var i = 0; i < array_length_1d(obj_inventory.inventory_cells); i++) {
-        var cell = obj_inventory.inventory_cells[i]; // Получаем ячейку
-        
-        // Если ячейка не пуста и содержит предмет, добавляем информацию о предмете
-        if (cell.item != undefined && cell.item.itemName == "Трость") {
-
-			animStayL = spr_playerStayL;
+var rHand = obj_inventory.inventory_cells[0];
+        if (rHand.item != undefined && rHand.item.itemName == "Трость") {
+			animStayR = spr_v2PlayerStayR;
+			animStayL = spr_v2PlayerStayL;
 			//todo напихать все анимации с палкой для бега удара и т.д.
-        }
-}
+        } if (rHand.item == undefined) {
+			animStayR = spr_v1PlayerStayR;
+			animStayL = spr_v1PlayerStayL;
+		}
+//todo зархардкодить спрайт для бутылке в правой руке
