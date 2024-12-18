@@ -9,10 +9,11 @@ pressedStule = spr_newGame_normal;
 
 spawn_GUI = false;
 content = undefined;
+scroll_offset = 0;
 
 
 callback_function = function() {
-    var text = file_text_open_read("n_info.txt");
+    var text = file_text_open_read("about.txt");
     content = "";
     while (!file_text_eof(text)) {
         content += file_text_readln(text) + "\n";
