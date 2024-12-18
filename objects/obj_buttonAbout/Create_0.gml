@@ -3,9 +3,9 @@
 
 event_inherited(); //наследование логики родительского обьекта
 
-normalStule = spr_newGame_hovered;
-hoveredStule = spr_newGame_pressed;
-pressedStule = spr_newGame_normal;
+normalStyle = spr_about_normal;
+hoveredStyle = spr_about_hovered;
+pressedStyle = spr_about_pressed;
 
 spawn_GUI = false;
 content = undefined;

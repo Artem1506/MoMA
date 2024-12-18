@@ -29,6 +29,7 @@ if (spawn_GUI == true) {
 	draw_set_alpha(1);
 	
     // Отрисовка текста
+	draw_set_font(f_rus_default)
     var text_x = box_x + text_margin;
     var text_y = box_y + text_margin - scroll_offset; // Учитываем прокрутку
     draw_set_color(c_white);
