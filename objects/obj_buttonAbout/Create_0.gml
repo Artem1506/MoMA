@@ -21,6 +21,7 @@ callback_function = function() {
 	file_text_close(text);
 	
 	spawn_GUI = true; 
+	sc_apiPost("about", noone);
 	//show_debug_message(content);
 }
 /*    file_text_close(text);
