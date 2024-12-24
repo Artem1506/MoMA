@@ -8,4 +8,6 @@ pressedStyle = spr_newGame_pressed;
 
 callback_function = function() {
 	room_goto(lvl_apart);
+	sc_apiPost("new_game", noone);
 }
+
