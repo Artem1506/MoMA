@@ -1,0 +1,26 @@
+{
+  "dialogue": {
+    ""1"": {
+      "ego": "текст текст",
+      "choices": {
+        "a": {
+          "text": "ответ текст 1",
+          "next": "2",
+          "condition": "player_mood == 'happy'"
+        },
+        "b": {
+          "text": "текстовый ответ 2",
+          "next": "3"
+        }
+      }
+    },
+    "n2": {
+      "text": "завершение",
+      "next": "end"
+    },
+    "n3": {
+      "text": "открыть магазин",
+      "action": "open_shop"
+    }
+  }
+}
