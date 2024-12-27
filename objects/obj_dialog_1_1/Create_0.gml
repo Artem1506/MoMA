@@ -4,5 +4,5 @@
 event_inherited();
 
 visible = true
-dialog_data = sc_loadDialog("dialog_1.json");
+dialog_data = sc_loadDialog("dialog_1_1.json");
 current_node = "node_1";

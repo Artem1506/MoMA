@@ -46,6 +46,7 @@
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"about.txt","CopyToMask":-1,"filePath":"datafiles","name":"about.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"dialog_1_1.json","CopyToMask":-1,"filePath":"datafiles","name":"dialog_1_1.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"dialog_1.json","CopyToMask":-1,"filePath":"datafiles","name":"dialog_1.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
