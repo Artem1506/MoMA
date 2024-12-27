@@ -20,7 +20,8 @@ if (!is_struct(dialog_data)) {
     return;
 }
 
-var node = dialog_data.dialogue[current_node];
+//var node = dialog_data.current_node;
+var node = dialog_data.node_1;
 if (node == undefined) {
     draw_text(50, 50, "Ошибка: Узел с ключом " + string(current_node) + " не найден.");
     return;
@@ -43,11 +44,13 @@ if (choices != undefined) {
     }
 
     var y_offset = 100;
-    var keys = struct_get_keys(choices);
+    var keys = struct_get_names(choices);
 
     for (var i = 0; i < array_length(keys); i++) {
         var key = keys[i];
-        var choice_text = choices[key].text;
+        //var key = struct_get_names(choices);
+        var choice = choices.key; //ебучая структура как использовать переменную в ключах структуры!!!!
+        var choice_text = choice.text;
 
         if (choice_text != undefined) {
             // Вычисляем цвет текста

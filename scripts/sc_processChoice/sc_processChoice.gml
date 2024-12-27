@@ -3,7 +3,7 @@
 
 function sc_processChoice(choice_key) {
     // Получаем текущий узел диалога
-    var node = dialogue_data[? "dialogue"][? current_node];
+    var node = dialog_data[? "dialogue"][? current_node];
 
     // Проверяем наличие выбора в узле
     if (node[? "choices"] != undefined && node[? "choices"][? choice_key] != undefined) {

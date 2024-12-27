@@ -1,7 +1,7 @@
-/// Script assets have changed for v2.3.0 see
+///@description загрузка из json файла и преобразование в структуру GML
 
 function sc_loadDialog() {
-var file_path = argument0;
+var file_path = argument0; // json файл с диалогом
 
 var file_content = file_text_open_read(file_path);
 var dialogue_json = "";
@@ -17,6 +17,5 @@ var dialogue_json = "";
 	if (is_struct(dialog_data)) {show_debug_message("pobeda")} 
 	else {show_debug_message("bitch")}
 	
-    return dialog_data
-	
+    return dialog_data	
 }
