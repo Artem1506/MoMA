@@ -13,9 +13,6 @@ var dialogue_json = "";
     file_text_close(file_content);
 	
 	var dialog_data = json_parse(dialogue_json)
-	
-	if (is_struct(dialog_data)) {show_debug_message("pobeda")} 
-	else {show_debug_message("bitch")}
-	
+		
     return dialog_data	
 }

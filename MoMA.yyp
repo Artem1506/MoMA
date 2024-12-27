@@ -65,6 +65,7 @@
     {"id":{"name":"obj_buttonExit","path":"objects/obj_buttonExit/obj_buttonExit.yy",},},
     {"id":{"name":"obj_buttonNewGame","path":"objects/obj_buttonNewGame/obj_buttonNewGame.yy",},},
     {"id":{"name":"obj_checkCoin","path":"objects/obj_checkCoin/obj_checkCoin.yy",},},
+    {"id":{"name":"obj_dialog_1_1","path":"objects/obj_dialog_1_1/obj_dialog_1_1.yy",},},
     {"id":{"name":"obj_dialog_manager","path":"objects/obj_dialog_manager/obj_dialog_manager.yy",},},
     {"id":{"name":"obj_door_1","path":"objects/obj_door_1/obj_door_1.yy",},},
     {"id":{"name":"obj_door_2","path":"objects/obj_door_2/obj_door_2.yy",},},
