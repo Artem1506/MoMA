@@ -1,17 +1,43 @@
 /// @description Draw dialogue and choices
-// atention!!!! если в ноде есть ключ некст без вариантов ответа 
+//
 //допилить варианты с экшенами и кондишинами это будет парент для всех остальных диалогов
 
 draw_set_font(f_rus_default);
 
 var node = variable_struct_get(dialog_data, current_node);
 
+var scroll_offset = 0;
+var box_x = 100, box_y = 290;       // падинги по горизонтали по 100 пикселов
+var box_width = 482, box_height = 80; // Размеры рамки, падинги по горизонтали по 100 пикселов
+var text_margin = 5; // Отступ текста
+
+if (scroll_offset < 0) scroll_offset = 0;
+    var content_height = 85;
+    if (scroll_offset > content_height - box_height + text_margin) {
+        scroll_offset = content_height - box_height + text_margin;
+	}
+    if (mouse_wheel_up()) scroll_offset -= 5; 
+    if (mouse_wheel_down()) scroll_offset += 5;
+
+	draw_set_alpha(0.5);
+	
+    draw_set_color(c_black);
+    draw_rectangle(box_x, box_y, box_x + box_width, box_y + box_height, false);
+
+    draw_set_color(c_white);
+    draw_rectangle(box_x, box_y, box_x + box_width, box_y + box_height, true);
+	
+	draw_set_alpha(1);
+	
 var text = node.text;
 
-draw_text(222, 300, string(text));
+    var text_x = box_x + text_margin;
+    var text_y = box_y + text_margin - scroll_offset;
+    draw_set_color(c_white);
+    draw_text_ext(text_x, text_y, text, 15, box_width - text_margin);
 
 if (variable_struct_exists(node, "next")) {
-	var text_x = 250;
+	var text_x = 150;
     var text_y = 330;
     var end_text = "Далее";
 
@@ -45,7 +71,7 @@ if (variable_struct_exists(node, "choices")) {
         var choice_text = variable_struct_get(choice, "text");
 
         if (choice_text != undefined) {
-            var text_x = 250;
+            var text_x = 150;
             var text_y = y_offset;
             var text_width = string_width(choice_text) + string_width(key) + 10;
             var text_height = string_height(choice_text);
@@ -68,7 +94,7 @@ if (variable_struct_exists(node, "choices")) {
     } 
 } 
 if (variable_struct_exists(node, "end")) {
-	var text_x = 250;
+	var text_x = 150;
     var text_y = 330;
     var end_text = "уйти";
 
