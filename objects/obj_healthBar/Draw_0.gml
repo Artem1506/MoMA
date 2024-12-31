@@ -15,4 +15,4 @@ if (global.playerHp <= 0){
 
 gif_hp_full += 0.2;
 gif_hp_low += 0.5;
-gif_hp_empty += 0.5;
+gif_hp_empty += 0.2;

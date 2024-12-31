@@ -23,7 +23,7 @@ if (spawn_GUI == true) {
     draw_set_color(c_black);
     draw_rectangle(box_x, box_y, box_x + box_width, box_y + box_height, false);
 
-    draw_set_color(c_white);
+    draw_set_color(make_color_rgb(110, 106, 109));
     draw_rectangle(box_x, box_y, box_x + box_width, box_y + box_height, true);
 	
 	draw_set_alpha(1);
