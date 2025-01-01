@@ -16,10 +16,7 @@
     "name":"hud_element",
     "path":"folders/Objects/hud_element.yy",
   },
-  "parentObjectId":{
-    "name":"obj_inventory",
-    "path":"objects/obj_inventory/obj_inventory.yy",
-  },
+  "parentObjectId":null,
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

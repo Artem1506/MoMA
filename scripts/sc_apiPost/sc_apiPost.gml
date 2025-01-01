@@ -2,6 +2,7 @@
 
 //todo не работает вывод платформы
 
+/*
 var event = argument0;
 var result = argument1;
 

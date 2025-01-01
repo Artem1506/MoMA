@@ -3,6 +3,7 @@
 
 global.playerName = "Арчибальт Кейн";
 global.playerHp = 2;
+global.playerMoney = 0;
 global.playerIsShadow = true;
 global.playerIsInteract = false;
 playerSpeed = 1;
