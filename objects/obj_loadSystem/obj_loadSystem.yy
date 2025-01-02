@@ -1,18 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_healthBar",
+  "%Name":"obj_loadSystem",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_healthBar",
+  "name":"obj_loadSystem",
   "overriddenProperties":[],
   "parent":{
-    "name":"hud_element",
-    "path":"folders/Objects/hud_element.yy",
+    "name":"Tools",
+    "path":"folders/Objects/Tools.yy",
   },
   "parentObjectId":null,
-  "persistent":true,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -29,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_healthBar_full",
-    "path":"sprites/spr_healthBar_full/spr_healthBar_full.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

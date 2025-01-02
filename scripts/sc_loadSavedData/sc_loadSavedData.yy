@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"sc_processChoice",
+  "%Name":"sc_loadSavedData",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"sc_processChoice",
+  "name":"sc_loadSavedData",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

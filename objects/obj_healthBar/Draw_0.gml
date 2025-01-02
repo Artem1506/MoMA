@@ -1,18 +1,20 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description рисование ХП бара
 
 draw_self();
 
-if (global.playerHp >= 2){
-	draw_sprite(spr_healthBar_full,gif_hp_full,x,y);
-}
-if (global.playerHp = 1){
-	draw_sprite(spr_healthBar_low,gif_hp_low,x,y);
-}
-if (global.playerHp <= 0){
-	draw_sprite(spr_healthBar_empty,gif_hp_empty,x,y);
+if (global.playerHp != undefined || global.playerHp != noone) {
+	if (global.playerHp >= 2){
+		sprite_index = spr_healthBar_full 
+		}
+	if (global.playerHp = 1){
+		sprite_index = spr_healthBar_low 
+		}
+	if (global.playerHp <= 0){
+		sprite_index = spr_healthBar_empty 
+		} 
+	else if (global.playerHp == undefined || global.playerHp == noone) { 
+		sprite_index = 0;
+		draw_text(x, y, "error");
+	}
 }
 
-gif_hp_full += 0.2;
-gif_hp_low += 0.5;
-gif_hp_empty += 0.2;
