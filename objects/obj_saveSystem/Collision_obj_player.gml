@@ -2,10 +2,12 @@
 // You can write your code in this editor
 
 ini_open("saveGame.ini");
-var obj_name = object_get_name(object_index)
-ini_write_string("checkpoint", "id", obj_name)
-ini_write_real("player", "hp", global.playerHp);
-ini_write_real("player", "money", global.playerMoney);
+var obj_name = base64_encode(object_get_name(object_index));
+ini_write_string("checkpoint", "id", obj_name);
+var playerHp = base64_encode(global.playerHp);
+ini_write_string("player", "hp", playerHp);
+var playerMoney = base64_encode(global.playerMoney);
+ini_write_string("player", "money", playerMoney);
 // руками дописать проверку на наличие в слое уровня трости
 for (var i = 0; i < array_length_1d(obj_inventory.inventory_cells); i++) {
 	var cell = obj_inventory.inventory_cells[i];
@@ -15,10 +17,10 @@ for (var i = 0; i < array_length_1d(obj_inventory.inventory_cells); i++) {
 	ini_write_string(section_name, "item", cell.item);
     ini_write_string(section_name, "ico", cell.itemIco);
 }
-var currentRoom = room_get_name(room)
+var currentRoom = base64_encode(room_get_name(room));
 ini_write_string("position", "room", currentRoom);
-var obj_x = x;
-var obj_y = y;
-ini_write_real("position", "location_x", obj_x);
-ini_write_real("position", "location_y", obj_y);
-ini_close()
+var obj_x = base64_encode(x);
+var obj_y = base64_encode(y);
+ini_write_string("position", "location_x", obj_x);
+ini_write_string("position", "location_y", obj_y);
+ini_close();

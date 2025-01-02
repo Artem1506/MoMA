@@ -5,11 +5,15 @@ if (global.is_loaded == true) {
 	instance_destroy(obj_player)
 	ini_open("saveGame.ini");
 	
-	var x_position = ini_read_real("position", "location_x", 5);
-	var y_position = ini_read_real("position", "location_y", 250);
-	instance_create_layer(x_position, y_position, "Instances", obj_player);
-	global.playerHp = ini_read_real("player", "hp", 2);
-	global.playerMoney = ini_read_real("player", "money", 0);
+	var x_position = ini_read_string("position", "location_x", 5);
+	var x_position_decode = base64_decode(x_position);
+	var y_position = ini_read_string("position", "location_y", 250);
+	var y_position_decode = base64_decode(y_position);
+	instance_create_layer(x_position_decode, y_position_decode, "Instances", obj_player);
+	var playerHp = ini_read_string("player", "hp", 2);
+	global.playerHp = base64_decode(playerHp);
+	var playerMoney = ini_read_string("player", "money", 0);
+	global.playerMoney = base64_decode(playerMoney);
 
 // проблема с чтением записи из ини файла, читает до " дальше считает строку законченой
 // проблема с заполнением инвентаря из данных заполняет все ячейки
