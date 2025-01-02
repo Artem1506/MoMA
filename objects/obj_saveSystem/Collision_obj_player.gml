@@ -2,6 +2,8 @@
 // You can write your code in this editor
 
 ini_open("saveGame.ini");
+var obj_name = object_get_name(object_index)
+ini_write_string("checkpoint", "id", obj_name)
 ini_write_real("player", "hp", global.playerHp);
 ini_write_real("player", "money", global.playerMoney);
 // руками дописать проверку на наличие в слое уровня трости

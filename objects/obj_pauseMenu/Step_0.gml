@@ -6,9 +6,10 @@ if (keyboard_check_pressed(vk_escape)) {
 	if (global.is_paused == true) {
 		layer_create(-10, global.pause_layer);
 		instance_create_layer(64, 64, global.pause_layer, obj_buttonResume);
-		instance_create_layer(64, 128, global.pause_layer, obj_buttonContinue);
+		instance_create_layer(64, 128, global.pause_layer, obj_buttonLastCheckpoint);
+		instance_create_layer(64, 192, global.pause_layer, obj_buttonControl);
 		instance_create_layer(64, 256, global.pause_layer, obj_buttonExit);
-		audio_play_sound(snd_mainMenuThem3, 1, false);
+		audio_play_sound(snd_mainMenuThem3, 1, true);
 		instance_deactivate_layer("Dialog");
 		instance_deactivate_layer("HUD");
 		instance_deactivate_layer("Instances");
@@ -16,5 +17,6 @@ if (keyboard_check_pressed(vk_escape)) {
 	} else {
 		instance_activate_all();
 		layer_destroy(global.pause_layer);
+		audio_stop_all()
 	}
 }

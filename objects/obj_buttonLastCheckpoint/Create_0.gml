@@ -3,22 +3,24 @@
 
 event_inherited();
 
-normalStyle = spr_continue_normal;
-hoveredStyle = spr_continue_hovered;
-pressedStyle = spr_continue_pressed;
+normalStyle = spr_lastCheckpoint_normal;
+hoveredStyle = spr_lastCheckpoint_hovered;
+pressedStyle = spr_lastCheckpoint_pressed;
 
 callback_function = function() {
-	sc_apiPost("load_game", noone)
+	sc_apiPost("load_game", "checkpoint")
 	
 	ini_open("saveGame.ini");
-	var obj_name = ini_read_string("checkpoint", "id", noone);
+	
 	var loadLvl = ini_read_string("position", "room", lvl_apart);
 	var room_map = ds_map_create();
 	room_map[? "lvl_apart"] = lvl_apart;
 	var room_id = room_map[? loadLvl];
 	global.is_loaded = true;
-	sc_apiPost("load_game", obj_name)
 	ini_close()
-	
+	global.is_paused = false;
+	audio_stop_all();
+	instance_activate_all();
+	layer_destroy(global.pause_layer);
 	room_goto(room_id);
 }

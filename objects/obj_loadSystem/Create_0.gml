@@ -1,15 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var rHand = obj_inventory.inventory_cells[0];
-show_debug_message(rHand.item)
-var lHand = obj_inventory.inventory_cells[1];
-show_debug_message(lHand.item)
-var aHand = obj_inventory.inventory_cells[2];
-show_debug_message(aHand.item)
-var sHand = obj_inventory.inventory_cells[3];
-show_debug_message(sHand.item)
-
 if (global.is_loaded == true) {
 	instance_destroy(obj_player)
 	ini_open("saveGame.ini");
@@ -20,7 +11,9 @@ if (global.is_loaded == true) {
 	global.playerHp = ini_read_real("player", "hp", 2);
 	global.playerMoney = ini_read_real("player", "money", 0);
 
-	var cells_count = array_length_1d(obj_inventory.inventory_cells);
+// проблема с чтением записи из ини файла, читает до " дальше считает строку законченой
+// проблема с заполнением инвентаря из данных заполняет все ячейки
+	/*var cells_count = array_length_1d(obj_inventory.inventory_cells);
 	for (var i = 0; i < cells_count; i++) {
 		var section_name = "cell_" + string(i);
 	    if (ini_key_exists(section_name, "type")) {
@@ -35,7 +28,7 @@ if (global.is_loaded == true) {
             cell.item = item_data;
 			show_debug_message(string(cell.item))
             }
-		}
+		}*/
 	
 	ini_close()
 	global.is_loaded = false; 
