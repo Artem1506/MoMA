@@ -5,10 +5,15 @@
 draw_set_font(f_rus_default);
 
 var node = variable_struct_get(dialog_data, current_node);
+var speaker = node.speaker;
+
+if (speaker == "Archie") { draw_sprite(spr_archieFace, 0, 16, 272) };
+if (speaker == "Ego") { draw_sprite(spr_egoFace, 0, 570, 272) };
+
 
 var scroll_offset = 0;
-var box_x = 100, box_y = 290;       // падинги по горизонтали по 100 пикселов
-var box_width = 482, box_height = 80; // Размеры рамки, падинги по горизонтали по 100 пикселов
+var box_x = 117, box_y = 256;       // падинги по горизонтали по 100 пикселов
+var box_width = 448, box_height = 112; // Размеры рамки, падинги по горизонтали по 100 пикселов
 var text_margin = 5; // Отступ текста
 
 if (scroll_offset < 0) scroll_offset = 0;
