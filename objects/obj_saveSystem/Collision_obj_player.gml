@@ -2,6 +2,8 @@
 // You can write your code in this editor
 
 ini_open("saveGame.ini");
+var id_gamer = base64_encode(global.idGamer);
+ini_write_string("gamer", "id", id_gamer);
 var obj_name = base64_encode(object_get_name(object_index));
 ini_write_string("checkpoint", "id", obj_name);
 var playerHp = base64_encode(global.playerHp);
