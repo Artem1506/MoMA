@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_idGamerSystem",
+  "%Name":"obj_dialog_1_2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_idGamerSystem",
+  "name":"obj_dialog_1_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tools",
-    "path":"folders/Objects/Tools.yy",
+    "name":"dialog_system",
+    "path":"folders/Objects/dialog_system.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_dialog_manager",
+    "path":"objects/obj_dialog_manager/obj_dialog_manager.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_inputUser",
-    "path":"sprites/spr_inputUser/spr_inputUser.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

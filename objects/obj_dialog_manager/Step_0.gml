@@ -1,6 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (visible == true) { instance_deactivate_object(obj_player)
+	//keyboard_check_pressed(ord("W")) || 
+	//keyboard_check_pressed(ord("A")) ||
+	//keyboard_check_pressed(ord("S")) || 
+	//keyboard_check_pressed(ord("D")) 
+}
+ 
+//else { playerSpeed = 1 }
+	
+
 // Определяем переменную для выбранного варианта
 var selected_choice = "";
 
