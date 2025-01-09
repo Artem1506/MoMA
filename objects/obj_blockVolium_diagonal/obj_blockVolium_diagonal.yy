@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_door_2",
+  "%Name":"obj_blockVolium_diagonal",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_door_2",
+  "name":"obj_blockVolium_diagonal",
   "overriddenProperties":[],
   "parent":{
-    "name":"lvl_objects",
-    "path":"folders/Objects/lvl_objects.yy",
+    "name":"Tools",
+    "path":"folders/Objects/Tools.yy",
   },
-  "parentObjectId":{
-    "name":"obj_door_parent",
-    "path":"objects/obj_door_parent/obj_door_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_door2_closed",
-    "path":"sprites/spr_door2_closed/spr_door2_closed.yy",
+    "name":"spr_diagonalMask",
+    "path":"sprites/spr_diagonalMask/spr_diagonalMask.yy",
   },
   "spriteMaskId":null,
   "visible":true,

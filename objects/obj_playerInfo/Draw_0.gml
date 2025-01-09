@@ -8,7 +8,7 @@ draw_set_color(c_black);
 draw_text(x,y,"HP" + string(global.playerHp));
 draw_text(x,y+15,"isInteract" + string(global.playerIsInteract));
 draw_text(x,y+30,"isShadow" + string(global.playerIsShadow));
-draw_text(x,y-10,"inv_ico" + string(obj_invCell.itemIco));
+/*draw_text(x,y-10,"inv_ico" + string(obj_invCell.itemIco));
 draw_text(x,y+150,"is_dragging" + string(obj_invCell.is_dragging));
 if (obj_invCell.drag_item != undefined) { 
 	draw_text(x,y+165,"drag_item" + string(obj_invCell.drag_item)); 

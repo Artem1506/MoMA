@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_knockOnDoor",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.809781,
+  "name":"snd_knockOnDoor",
+  "parent":{
+    "name":"lvl_sonds",
+    "path":"folders/Sounds/lvl_sonds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_knockOnDoor.mp3",
+  "type":1,
+  "volume":1.0,
+}

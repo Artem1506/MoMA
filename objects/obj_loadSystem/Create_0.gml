@@ -2,7 +2,9 @@
 // You can write your code in this editor
 
 if (global.is_loaded == true) {
-	instance_destroy(obj_player)
+	instance_destroy(obj_player);
+	instance_destroy(obj_dialog_1_1);
+	
 	ini_open("saveGame.ini");
 	
 	var x_position = ini_read_string("position", "location_x", 5);

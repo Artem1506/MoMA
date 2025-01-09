@@ -4,6 +4,6 @@
 event_inherited();
 
 visible = false;
-mask_index = spr_collisiom_mask_16x64;
+mask_index = spr_diagonalMask;
 dialog_data = sc_loadDialog("dialog_1_2.json");
 current_node = "node_1";
