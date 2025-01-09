@@ -1,9 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+collision_player = false;
+
+var bg1 = layer_get_id("Background")
 if (solid == false) {
-	layer_set_visible("Background", false);
-	layer_set_visible("Background_1", true);
+	layer_set_visible(bg1, false);
 }
 
-show_debug_message(string(solid))
+if (image_index >= 4) {
+	image_speed = 0
+	}

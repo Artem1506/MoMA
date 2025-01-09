@@ -13,6 +13,10 @@ animStayR = spr_v1PlayerStayR;
 animStayL = spr_v1PlayerStayL;
 animWalkR = spr_v2PlayerWalkR;
 animWalkL = spr_v2PlayerWalkL;
+animRunR = noone;
+animRunL = noone;
+animKickL = noone;
+animKickR = noone;
 //todo добавить анимайи и обозвать их переменными
 
 
