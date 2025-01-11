@@ -6,8 +6,11 @@ global.playerHp = 2;
 global.playerMoney = 0;
 global.playerIsShadow = true;
 global.playerIsInteract = false;
+global.playerNoiseLvl = 0;
 playerSpeed = 1;
-///global.playerIsVisible = false;
+playerRest = true;
+
+global.playerAgroDistance = 0;
 
 animStayR = spr_v1PlayerStayR;
 animStayL = spr_v1PlayerStayL;

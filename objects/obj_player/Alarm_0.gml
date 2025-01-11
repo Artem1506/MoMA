@@ -1,7 +1,9 @@
-/// @description Insert description here
+/// @description sprint taimer
 // You can write your code in this editor
 
-playerSpeed = 1
+playerSpeed = 1;
+alarm[1] = 180;
+
 
 /*будильник спринта 1 секунду спринта потом скорость выставляется =1 
 лочится клавши шифта и запускается другой будильник на 3 секунды 
