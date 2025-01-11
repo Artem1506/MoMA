@@ -3,6 +3,13 @@
 
 collision_player = true;
 
+if (global.playerIsInteract == true && solid == true && is_locked = false){
+	sprite_index = sprite_DoorOpen;
+	solid = false;
+	image_index += 0;
+	audio_play_sound (snd_door_opening,10,false);
+}
+
 var pocket_1 = obj_inventory.inventory_cells[2]; //надо свойство прописать что только в одном слоте лежат отмычки
 //var pocket_2 = obj_inventory.inventory_cells[3];
 
@@ -36,6 +43,10 @@ if (keyboard_check_pressed(ord("F")) && is_locked == true) {
 		if (result == true) {
 			sc_apiPost(object_get_name(object_index), "power_kick_success");
 			alarm[0] = 121;
+			sprite_index = sprite_DoorOpen;
+			solid = false;
+			image_index += 0;
+			audio_play_sound (snd_door_opening,10,false);
 			obj_player.sprite_index = spr_playerStayR
 			// прокрутить анимацию 1 раз и вернуть старый спрайт 
 			//if (image_index >= 4) {

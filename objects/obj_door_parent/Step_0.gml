@@ -6,6 +6,7 @@ collision_player = false;
 var bg1 = layer_get_id("Background")
 if (solid == false) {
 	layer_set_visible(bg1, false);
+	
 }
 
 if (image_index >= 4) {
