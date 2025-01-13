@@ -4,7 +4,7 @@
 if (sprite_index = spr_inventory) {
 	sprite_index = spr_inventoryBg;
 	offset_x = -66;
-	offset_y = -116;
+	offset_y = -156;
 } else if (sprite_index = spr_inventoryBg) {
 	sprite_index = spr_inventory;
 	offset_x = 0;

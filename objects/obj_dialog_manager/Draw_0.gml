@@ -10,6 +10,10 @@ var speaker = node.speaker;
 if (speaker == "Archie") { draw_sprite(spr_archieFace, 0, 16, 256) };
 if (speaker == "Ego") { draw_sprite(spr_egoFace, 0, 570, 256) };
 
+if (variable_struct_exists(node, "action")) {
+	dialog_action = variable_struct_get(node, "action");
+}
+
 var scroll_offset = 0;
 var box_x = 117, box_y = 254;       // падинги по горизонтали по 100 пикселов
 var box_width = 448, box_height = 112; // Размеры рамки, падинги по горизонтали по 100 пикселов

@@ -37,6 +37,8 @@ if (keyboard_check_pressed(ord("R")) && is_locked == true) {
 if (keyboard_check_pressed(ord("F")) && is_locked == true) {
 	if (!instance_exists(obj_checkCoin)) {
 		var check_coin_inst = instance_create_layer(x, y-50, "HUD", obj_checkCoin);
+		global.playerNoiseLvl =+5;
+		alarm[1] = 1;
 			if (check_coin_inst != noone) {
 				var result = check_coin_inst.check_result;
 			}

@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_stick",
+  "%Name":"obj_dialog_1_4",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_stick",
+  "name":"obj_dialog_1_4",
   "overriddenProperties":[],
   "parent":{
-    "name":"items",
-    "path":"folders/Objects/player/items.yy",
+    "name":"dialog_system",
+    "path":"folders/Objects/dialog_system.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_dialog_manager",
+    "path":"objects/obj_dialog_manager/obj_dialog_manager.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_stick",
-    "path":"sprites/spr_stick/spr_stick.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

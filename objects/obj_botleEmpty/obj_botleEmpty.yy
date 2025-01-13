@@ -10,8 +10,8 @@
   "name":"obj_botleEmpty",
   "overriddenProperties":[],
   "parent":{
-    "name":"player",
-    "path":"folders/Objects/player.yy",
+    "name":"items",
+    "path":"folders/Objects/player/items.yy",
   },
   "parentObjectId":null,
   "persistent":false,

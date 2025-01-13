@@ -13,16 +13,16 @@ if (keyboard_check(ord("S"))) { y += 1; }
 
 if (keyboard_check(ord("E"))) { global.playerIsInteract = true; }
 if (keyboard_check_released(ord("E"))) { global.playerIsInteract = false; }
-
+/*
 show_debug_message(string(playerSpeed))
 show_debug_message("playerNoiseLvl")
 show_debug_message(string(global.playerNoiseLvl))
 show_debug_message(string(global.playerAgroDistance))
-
+*/
 global.playerNoiseLvl = playerSpeed * 2; 
 if (global.playerIsShadow == true) { var shadow = 1; }
-	else { var shadow = 2 }
-global.playerAgroDistance = global.playerNoiseLvl * shadow;
+	else { var shadow = 5 } //протестить геймплейно возможно больше сделать надо
+global.playerAgroDistance = global.playerNoiseLvl + shadow;
 
 if (keyboard_check(vk_shift) && playerRest == true) {
 	playerSpeed = 3;
