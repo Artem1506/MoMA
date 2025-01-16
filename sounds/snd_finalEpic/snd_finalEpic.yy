@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":149.73387,
+  "duration":0.0,
   "name":"snd_finalEpic",
   "parent":{
     "name":"Music",

@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_horror3",
+  "%Name":"snd_cut_intro",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":317.17874,
-  "name":"snd_horror3",
+  "name":"snd_cut_intro",
   "parent":{
     "name":"Music",
     "path":"folders/Sounds/Music.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_horror3.mp3",
+  "soundFile":"snd_cut_intro.mp3",
   "type":0,
   "volume":1.0,
 }

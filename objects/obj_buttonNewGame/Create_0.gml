@@ -8,7 +8,7 @@ pressedStyle = spr_newGame_pressed;
 
 callback_function = function() {
 	global.is_loaded = false;
-	room_goto(lvl_apart);
+	room_goto(lvl_cut_intro);
 	sc_apiPost("new_game", noone);
 }
 
