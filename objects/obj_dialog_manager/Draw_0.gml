@@ -9,6 +9,7 @@ var speaker = node.speaker;
 
 if (speaker == "Archie") { draw_sprite(spr_archieFace, 0, 16, 256) };
 if (speaker == "Ego") { draw_sprite(spr_egoFace, 0, 570, 256) };
+if (speaker == "Sibas") { draw_sprite(spr_sibasFace, 0, 570, 256) };
 
 if (variable_struct_exists(node, "action")) {
 	dialog_action = variable_struct_get(node, "action");

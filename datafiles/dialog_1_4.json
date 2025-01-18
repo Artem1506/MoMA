@@ -1,22 +1,22 @@
 {
   "node_1": {
-    "speaker": "Ego",
+    "speaker": "Sibas",
     "text": "Милорд Кейн. Меня послал герцог Кассий, я его камердинер, мое имя Сибас. Этот конверт для вас.",
     "next": "node_1.1"
   },
   "node_1.1": {
-    "speaker": "Ego",
+    "speaker": "Sibas",
     "text": "...",
     "action": "draw_message",
     "next": "node_2"
   },
   "node_2": {
-    "speaker": "Ego",
+    "speaker": "Sibas",
     "text": "Мой господин сказал, что перед тем как я передам вам аванс, вы должны уничтожить письмо, это будет означать ваше согласие.",
     "next": "node_2.1"
   },
   "node_2.1": {
-    "speaker": "Ego",
+    "speaker": "Sibas",
     "text": "...",
     "action": "draw_message_2",
     "next": "node_3"
@@ -40,24 +40,24 @@
     }
   },
   "node_4": {
-    "speaker": "Ego",
+    "speaker": "Sibas",
     "text": "Я передам своему господину ваше согласие. Прошу принять это.",
     "action": "add_money",
     "next": "node_4.1"
   },
   "node_4.1": {
-    "speaker": "Ego",
+    "speaker": "Sibas",
     "text": "Доброго здравия, милорд.",
     "action": "leave",
     "next": "node_7"
   },
   "node_5": {
-    "speaker": "Ego",
+    "speaker": "Sibas",
     "text": "Прошу простить меня, милорд Кейн, но указания моего господина предельно точны.",
     "next": "node_8"
   },
   "node_6": {
-    "speaker": "Ego",
+    "speaker": "Sibas",
     "text": "Я полагаю, вам не помешали бы деньги, но как вам будет угодно, милорд.",
     "action": "leave",
     "next": "node_9"

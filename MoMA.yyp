@@ -247,6 +247,7 @@
     {"id":{"name":"spr_resume_hovered","path":"sprites/spr_resume_hovered/spr_resume_hovered.yy",},},
     {"id":{"name":"spr_resume_normal","path":"sprites/spr_resume_normal/spr_resume_normal.yy",},},
     {"id":{"name":"spr_resume_pressed","path":"sprites/spr_resume_pressed/spr_resume_pressed.yy",},},
+    {"id":{"name":"spr_sibasFace","path":"sprites/spr_sibasFace/spr_sibasFace.yy",},},
     {"id":{"name":"spr_startMenu_BG","path":"sprites/spr_startMenu_BG/spr_startMenu_BG.yy",},},
     {"id":{"name":"spr_stick","path":"sprites/spr_stick/spr_stick.yy",},},
     {"id":{"name":"spr_v1PlayerStayL","path":"sprites/spr_v1PlayerStayL/spr_v1PlayerStayL.yy",},},
