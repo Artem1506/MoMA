@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_check_coin",
-    "path":"sprites/spr_check_coin/spr_check_coin.yy",
+    "name":"spr_diagonalMask",
+    "path":"sprites/spr_diagonalMask/spr_diagonalMask.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -5,8 +5,7 @@ visible = false;
 is_dragging = false;
 drag_item = undefined;
 
-
 cell_type = "none";   
 item = undefined;
-itemIco = noone;
-
+itemIcoName = undefined;
+//itemIco = undefined;

@@ -3,13 +3,8 @@
 
 draw_self();
 
-/*if (is_dragging && itemIco != noone) {
-	draw_sprite(itemIco, 0 , mouse_x, mouse_y);
-} else if (itemIco != noone) {
-	draw_sprite(itemIco,0,x,y);
-} */
-
 if (item != undefined) {
-	draw_sprite(itemIco,0,x,y)
+	var itemIco = asset_get_index(item.itemIcoName);
+	draw_sprite(itemIco, 0, x, y)
 }
 

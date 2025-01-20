@@ -3,3 +3,4 @@
 
 itemName = "Бутылка";
 type = "r_hand";
+itemIcoName = sprite_get_name(sprite_index);

@@ -7,27 +7,28 @@ if (!layer_get_visible(BG_id)) {
 	visible = true; 
 }
 
-//if (object_exists(obj_dialog_1_4)) {
-//	if (obj_dialog_1_4.dialog_action == "add_money") {
-//	global.playerMoney = 50;
-	//дописать добавление монетки в инвентарь + создать обьект монетку 
-//	}
-//}
+if (obj_dialog_1_4.dialog_action == "add_money") {
+	global.playerMoney = 50;
+}
 
 if (obj_dialog_1_4.dialog_action == "leave") {
-	var direct = point_direction(x, y, 490, 0);
-	var move_x = lengthdir_x(1, direct);
-	var move_y = lengthdir_y(1, direct);
-	show_debug_message(direct)
-	if(point_direction(x, y, 490, 0) > 1) {
-		x += move_x;
-		y += move_y;
-	}
-}
-if(point_direction(x, y, 490, 0) == 1) {
-	instance_destroy()
+	is_moving = true }
+if (is_moving) {
+    var target_x = 490;
+    var target_y = 0;
+    var distance = point_distance(x, y, target_x, target_y);
+    if (distance > 1) {
+        var direct = point_direction(x, y, target_x, target_y);
+        x += lengthdir_x(0.7, direct);
+        y += lengthdir_y(0.7, direct);
+    } else {
+        instance_destroy();
+    }
+
 }
 
 if (obj_dialog_1_4.dialog_action == "mission_done") {
 	global.mission_isDone = true;
+	show_debug_message("done "+string(global.mission_isDone))
 }
+//}

@@ -5,3 +5,4 @@ visible = false;
 dialog_data = undefined;
 current_node = undefined;
 dialog_action = undefined;
+dialog_end = false;

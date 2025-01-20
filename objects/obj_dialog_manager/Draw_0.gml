@@ -117,7 +117,7 @@ if (variable_struct_exists(node, "end")) {
     draw_text_color(text_x, text_y, end_text, text_color, text_color, text_color, text_color, 1);
 
     if (mouse_check_button_pressed(mb_left) && hovered_exit) {
-        
+        dialog_end = true;
 		instance_destroy(); 
 		instance_activate_object(obj_player);
     }

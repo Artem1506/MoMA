@@ -1,0 +1,34 @@
+{
+  "node_1": {
+    "speaker": "Ego",
+    "text": "Проверь кармыны, если мы уйдем сейчас, у нас не будет возможности вернуться.",
+    "next": "node_2"
+  },
+  "node_2": {
+    "speaker": "Archie",
+    "text": "...",
+    "action": "none",
+    "choices": {
+      "a": {
+        "text": "(Уйти)",
+        "next": "node_3"
+      },
+      "b": {
+        "text": "(Пока не уходить)",
+        "next": "node_4"
+      }
+    }
+  },
+  "node_3": {
+    "speaker": "Archie",
+    "text": "...",
+    "action": "none",
+    "end": "end"
+  },
+  "node_4": {
+    "speaker": "Archie",
+    "text": "...",
+    "action": "back",
+    "next": "node_1"
+  }
+}

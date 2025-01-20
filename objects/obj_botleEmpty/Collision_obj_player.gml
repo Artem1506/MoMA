@@ -23,12 +23,11 @@ if (global.playerIsInteract == true) {
         }
     }
 
-    if (slot != -1) {
+     if (slot != -1) {
 		var targetCell = obj_inventory.inventory_cells[slot];
         targetCell.item = self;
         targetCell.cell_type = self.type; // хз зачем это делать но без этого не работает
-        targetCell.itemIco = sprite_index;
-		instance_destroy();   
+		instance_destroy();  
     } else {
         show_message("Инвентарь полон!"); // Нет свободных ячеек
     }
