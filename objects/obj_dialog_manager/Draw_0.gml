@@ -1,6 +1,4 @@
 /// @description Draw dialogue and choices
-//
-//допилить варианты с экшенами и кондишинами это будет парент для всех остальных диалогов
 
 draw_set_font(f_rus_default);
 
@@ -46,8 +44,8 @@ var text = node.text;
     draw_text_ext(text_x, text_y, text, 15, box_width - text_margin);
 
 if (variable_struct_exists(node, "next")) {
-	var text_x = 150;
-    var text_y = 330;
+	var text_x = 490;
+    var text_y = 340;
     var end_text = "Далее";
 
     var text_width = string_width(end_text);
@@ -70,7 +68,7 @@ if (variable_struct_exists(node, "next")) {
 if (variable_struct_exists(node, "choices")) {
 	var choices = variable_struct_get(node, "choices");
 
-    var y_offset = 330;
+    var y_offset = 305;
     var keys = struct_get_names(choices);
     var hovered_key = undefined;
 
@@ -80,7 +78,7 @@ if (variable_struct_exists(node, "choices")) {
         var choice_text = variable_struct_get(choice, "text");
 
         if (choice_text != undefined) {
-            var text_x = 150;
+            var text_x = 145;
             var text_y = y_offset;
             var text_width = string_width(choice_text) + string_width(key) + 10;
             var text_height = string_height(choice_text);
@@ -102,10 +100,16 @@ if (variable_struct_exists(node, "choices")) {
         }
     } 
 } 
+
+if (dialog_action == "mission_done") {
+	global.mission_isDone = true;
+
+}
+
 if (variable_struct_exists(node, "end")) {
-	var text_x = 150;
-    var text_y = 330;
-    var end_text = "уйти";
+	var text_x = 490;
+    var text_y = 340;
+    var end_text = "Уйти";
 
     var text_width = string_width(end_text);
     var text_height = string_height(end_text);

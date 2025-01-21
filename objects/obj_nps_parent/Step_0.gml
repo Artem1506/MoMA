@@ -24,11 +24,4 @@ if (is_moving) {
     } else {
         instance_destroy();
     }
-
 }
-
-if (obj_dialog_1_4.dialog_action == "mission_done") {
-	global.mission_isDone = true;
-	show_debug_message("done "+string(global.mission_isDone))
-}
-//}

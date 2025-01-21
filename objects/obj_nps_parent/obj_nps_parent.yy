@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_playerStayL",
-    "path":"sprites/spr_playerStayL/spr_playerStayL.yy",
+    "name":"spr_sebas_stay",
+    "path":"sprites/spr_sebas_stay/spr_sebas_stay.yy",
   },
   "spriteMaskId":null,
   "visible":false,
