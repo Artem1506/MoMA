@@ -12,6 +12,7 @@ var playerHp = base64_encode(global.playerHp);
 ini_write_string("player", "hp", playerHp);
 var playerMoney = base64_encode(global.playerMoney);
 ini_write_string("player", "money", playerMoney);
+ini_write_real("player", "death", global.death);
 
 for (var i = 0; i < array_length_1d(obj_inventory.inventory_cells); i++) {
 	var cell = obj_inventory.inventory_cells[i];

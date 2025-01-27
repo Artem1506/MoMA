@@ -7,6 +7,7 @@ hoveredStyle = spr_newGame_hovered;
 pressedStyle = spr_newGame_pressed;
 
 callback_function = function() {
+	global.death = 0;
 	global.is_loaded = false;
 	room_goto(lvl_cut_intro);
 	sc_apiPost("new_game", noone);

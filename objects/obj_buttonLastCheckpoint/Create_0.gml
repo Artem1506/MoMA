@@ -9,7 +9,10 @@ pressedStyle = spr_lastCheckpoint_pressed;
 
 callback_function = function() {
 	
+	global.death ++;
+	
 	ini_open("saveGame.ini");
+	ini_write_real("player", "death", global.death);
 	
 	var obj_name = ini_read_string("checkpoint", "id", noone);
 	var obj_name_decode = base64_decode(obj_name);
@@ -26,4 +29,6 @@ callback_function = function() {
 	instance_activate_all();
 	layer_destroy(global.pause_layer);
 	room_goto(room_id);
+	obj_gameOverMenu_dialog.visible = true;
+	
 }

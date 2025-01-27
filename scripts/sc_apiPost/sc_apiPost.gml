@@ -1,7 +1,8 @@
 /// Script assets have changed for v2.3.0 see
 
 //todo не работает вывод платформы
-
+//закончилась триалка
+/*
 function sc_apiPost() {
 	
 var event = argument0;
@@ -27,7 +28,7 @@ ds_map_add(post_data_map, "window_width", window_width);
 
 var post_data = json_encode(post_data_map);
 
-show_debug_message("post_data: " + post_data);
+//show_debug_message("post_data: " + post_data);
 
 ds_map_destroy(post_data_map);
 

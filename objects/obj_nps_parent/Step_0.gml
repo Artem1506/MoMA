@@ -14,6 +14,7 @@ if (obj_dialog_1_4.dialog_action == "add_money") {
 if (obj_dialog_1_4.dialog_action == "leave") {
 	is_moving = true }
 if (is_moving) {
+	sprite_index = spr_sebas_back; 
     var target_x = 490;
     var target_y = 0;
     var distance = point_distance(x, y, target_x, target_y);

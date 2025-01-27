@@ -2,6 +2,11 @@
 
 if (spawn_GUI == true) {
 	
+	draw_sprite(spr_QR_linkToTelegram, 0, 64, 64);
+	
+	var version = extension_get_version("Windows")
+	draw_text(0, 0, version)
+	
     // Размеры скроллбокса
     var box_x = 300, box_y = 0;       // Координаты верхнего левого угла
     var box_width = 382, box_height = 384; // Размеры рамки

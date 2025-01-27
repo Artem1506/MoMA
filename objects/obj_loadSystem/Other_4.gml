@@ -2,6 +2,8 @@
 // You can write your code in this editor
 
 if (global.is_loaded == true) {
+	showDeath = true;
+	
 	instance_destroy(obj_player);
 	instance_destroy(obj_dialog_1_1);
 	
@@ -18,6 +20,7 @@ if (global.is_loaded == true) {
 	global.playerHp = base64_decode(playerHp);
 	var playerMoney = ini_read_string("player", "money", 0);
 	global.playerMoney = base64_decode(playerMoney);
+	global.death = ini_read_real("player", "death", 0);
 
 	var cells_count = array_length_1d(obj_inventory.inventory_cells);
 	for (var i = 0; i < cells_count; i++) {

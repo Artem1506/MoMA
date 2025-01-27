@@ -10,4 +10,4 @@ draw_set_alpha(1)
 
 draw_self()
 
-show_debug_message(string(global.playerNoiseLvl))
+//show_debug_message(string(global.playerNoiseLvl))
