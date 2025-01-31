@@ -17,11 +17,10 @@ ini_write_real("player", "death", global.death);
 for (var i = 0; i < array_length_1d(obj_inventory.inventory_cells); i++) {
 	var cell = obj_inventory.inventory_cells[i];
 	var section_name = "cell_" + string(i); 
-	var cell_cell_type = base64_encode(cell.cell_type);
-	ini_write_string(section_name, "type", cell_cell_type);
-	var cell_item = base64_encode(cell.item);
+	var cell_item = base64_encode(json_stringify(cell.itemData));
 	ini_write_string(section_name, "item", cell_item);
 }
+
 var currentRoom = base64_encode(room_get_name(room));
 ini_write_string("position", "room", currentRoom);
 var obj_x = base64_encode(obj_player.x);
@@ -29,17 +28,19 @@ var obj_y = base64_encode(obj_player.y);
 ini_write_string("position", "location_x", obj_x);
 ini_write_string("position", "location_y", obj_y);
 
-/*код ниже нужен для загрузки списка обьектов на сцене, но список он получает в виде 
-ИДишников который процедурно сгенерированы, и получается что а палки в ИНИ файле ИД 11, 
-а в только что открытой комнате у этой же палки ИД 12, а ид 11 у диалога например
-записывать состояния в ини файлы не вариант.
-var Instances = layer_get_id("Instances")
-var layer1 = layer_get_all_elements(Instances);
-var layer1_encode = base64_encode(layer1);
-ini_write_string("layers", "Instances", layer1_encode);
-var Dialog = layer_get_id("Dialog")
-var layer2 = layer_get_all_elements(Dialog);
-var layer2_encode = base64_encode(layer2);
-ini_write_string("layers", "Dialog", layer2_encode);*/
+current_instances = 
+{
+	dialog_1_1 : instance_exists(obj_dialog_1_1),
+	dialog_1_2 : instance_exists(obj_dialog_1_2),
+	dialog_1_3 : instance_exists(obj_dialog_1_3),
+	dialog_1_4 : instance_exists(obj_dialog_1_4),
+	dialog_1_5 : instance_exists(obj_dialog_1_5),
+	botle : instance_exists(obj_botle),
+	botleEmpty : instance_exists(obj_botleEmpty),
+	stick : instance_exists(obj_stick),
+	key : instance_exists(obj_key)
+};
+var instances = base64_encode(json_stringify(current_instances));
+ini_write_string("instances", "objects", instances);
 
 ini_close();

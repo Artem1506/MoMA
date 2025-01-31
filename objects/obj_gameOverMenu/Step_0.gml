@@ -17,7 +17,7 @@ if (global.playerHp <= 0) {
 	instance_deactivate_layer("HUD");
 	instance_deactivate_layer("Instances");
 	instance_activate_object(obj_gameOverMenu);
-} else {
+} /* else {
 	instance_activate_all();
 	layer_destroy(global.gameOver_layer);
 	//audio_stop_all()

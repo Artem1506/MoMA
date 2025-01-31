@@ -3,5 +3,6 @@
 
 visible = false;
 
-itemName = "Вино";
-type = "l_hand"; // Тип предмета
+itemName = "Винишко";
+//type = "none"; 
+itemIcoName = spr_botle;

@@ -12,8 +12,8 @@
   "name":"obj_dragItem",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tools",
-    "path":"folders/Objects/Tools.yy",
+    "name":"items",
+    "path":"folders/Objects/player/items.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -5,7 +5,12 @@ visible = false;
 is_dragging = false;
 drag_item = undefined;
 
-cell_type = "none";   
-item = undefined;
-itemIcoName = undefined;
-//itemIco = undefined;
+//item = undefined;
+//itemIcoName = undefined;
+//itemObject = undefined;
+
+itemData = 
+	{
+	itemIcoName : undefined,
+	itemObject : undefined
+	};

@@ -3,6 +3,6 @@
 
 event_inherited();
 
-itemName = "none";
-type = "none"; 
+itemName = "Винишко";
+//type = "none"; 
 itemIcoName = sprite_get_name(sprite_index);

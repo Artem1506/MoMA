@@ -4,5 +4,5 @@
 event_inherited();
 
 itemName = "Трость";
-type = "r_hand";
+//type = "r_hand";
 itemIcoName = sprite_get_name(sprite_index);

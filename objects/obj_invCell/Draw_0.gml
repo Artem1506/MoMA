@@ -3,8 +3,8 @@
 
 draw_self();
 
-if (item != undefined) {
-	var itemIco = asset_get_index(item.itemIcoName);
+if (itemData.itemIcoName != undefined) {
+	var itemIco = asset_get_index(itemData.itemIcoName);
 	draw_sprite(itemIco, 0, x, y)
 }
 

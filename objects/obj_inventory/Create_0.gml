@@ -6,7 +6,6 @@ sprite_index = spr_inventory;
 offset_x = 0;
 offset_y = 0;
 
-
 cellWidth = 32;  
 cellHeight = 32; 
 var cellSpacing_x = 32;  
@@ -18,7 +17,6 @@ var start_y = y-100;
 
 inventory_cells = [];
 
-// Создаем ячейки
 for (var i = 0; i < rows; i++) {
     for (var j = 0; j < cols; j++) {
 		var cell_x = start_x + j * (cellWidth + cellSpacing_x);
@@ -26,15 +24,8 @@ for (var i = 0; i < rows; i++) {
         
 		var cell = instance_create_layer(cell_x, cell_y, "HUD", obj_invCell);
         
-        // Назначаем тип ячейке
-        if (i == 0 && j == 0) {
-            cell.cell_type = "r_hand"; 
-        } else if (i == 0 && j == 1) {
-            cell.cell_type = "l_hand"; 
-        } else {
-            cell.cell_type = "none"; 
-        }
-		inventory_cells[i * cols + j] = cell;
+		cell_index = i * cols + j;
+		inventory_cells[cell_index] = cell;
+		cell.cell_index = cell_index; 
     }
 }
-

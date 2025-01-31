@@ -1,17 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (item != undefined) {
-	drag_item = instance_create_layer(mouse_x, mouse_y, "Instances", obj_dragItem);
+if (itemData.itemObject != undefined) {
+	instance_create_layer(mouse_x, mouse_y, "Instances", obj_dragItem);
+	obj_dragItem.itemData = itemData;
+	obj_dragItem.sprite_index = asset_get_index(itemData.itemIcoName);
 	
-	drag_item.item = item;
-	drag_item.sprite_index = item.sprite_index;
-	
-	//is_dragging = true;
-	//dragItem = item;
-	//drag_offset_x = mouse_x - x;
-	//drag_offset_y = mouse_y - y;
-	item = undefined;
-	//item.sprite_index = noone;
+	self.itemData = {
+	itemIcoName : undefined,
+	itemObject : undefined
+	};
 }
 
