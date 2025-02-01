@@ -12,8 +12,8 @@
   "duration":226.48163,
   "name":"snd_gameOver4",
   "parent":{
-    "name":"Music",
-    "path":"folders/Sounds/Music.yy",
+    "name":"used",
+    "path":"folders/Sounds/Music/used.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_gameOver4.mp3",
   "type":0,
-  "volume":1.0,
+  "volume":0.2,
 }

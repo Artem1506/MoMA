@@ -122,6 +122,7 @@ if (variable_struct_exists(node, "end")) {
 
     if (mouse_check_button_pressed(mb_left) && hovered_exit) {
         dialog_end = true;
+		obj_gameOverMenu_dialog.visible = false;
 		instance_destroy(); 
 		instance_activate_object(obj_player);
     }

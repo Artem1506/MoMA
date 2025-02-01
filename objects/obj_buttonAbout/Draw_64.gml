@@ -7,7 +7,6 @@ if (spawn_GUI == true) {
 	var version = extension_get_version("Windows")
 	draw_text(0, 0, version)
 	
-    // Размеры скроллбокса
     var box_x = 300, box_y = 0;       // Координаты верхнего левого угла
     var box_width = 382, box_height = 384; // Размеры рамки
     var text_margin = 5; // Отступ текста

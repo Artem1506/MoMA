@@ -3,6 +3,9 @@
 
 collision_player = true;
 
+var slot = -1;
+var cell;
+
 if (global.playerIsInteract == true && solid == true && is_locked = false){
 	sprite_index = sprite_DoorOpen;
 	solid = false;
@@ -10,12 +13,14 @@ if (global.playerIsInteract == true && solid == true && is_locked = false){
 	audio_play_sound (snd_door_opening,10,false);
 }
 
-var pocket_1 = obj_inventory.inventory_cells[2]; //надо свойство прописать что только в одном слоте лежат отмычки
-//var pocket_2 = obj_inventory.inventory_cells[3];
-
-if (pocket_1.item != undefined && pocket_1.item.itemName == "Отмычка") {
-	haveKey = true;
-} else { haveKey = false }
+for (var i = 0; i < array_length_1d(obj_inventory.inventory_cells); i++) {
+    cell = obj_inventory.inventory_cells[i];
+    if (cell.itemData.itemObject == "obj_key") {  
+		haveKey = true;
+		slot = i;
+        break;
+	} else { haveKey = false }
+}
 
 if (keyboard_check_pressed(ord("R")) && is_locked == true) {
 	if (haveKey == true && !instance_exists(obj_checkCoin)) {
@@ -29,7 +34,9 @@ if (keyboard_check_pressed(ord("R")) && is_locked == true) {
 		}
 		if (result == false) {
 			sc_apiPost(object_get_name(object_index), "master_key_fail");
-			pocket_1.item = undefined;
+			obj_inventory.inventory_cells[slot].itemData = {
+			itemIcoName : undefined,
+			itemObject : undefined }
 		}
 	}
 }
@@ -60,6 +67,6 @@ if (keyboard_check_pressed(ord("F")) && is_locked == true) {
 			obj_player.sprite_index = spr_playerStayL;
 			audio_play_sound(snd_kickDoor, 1, false)
 			global.playerHp -- 
-			}
+		}
 	}
 }

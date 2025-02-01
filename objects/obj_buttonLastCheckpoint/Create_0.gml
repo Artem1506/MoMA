@@ -25,9 +25,8 @@ callback_function = function() {
 	sc_apiPost("load_game_fromPAUSE", obj_name_decode);
 	ini_close()
 	global.is_paused = false;
-	audio_stop_all();
+	//audio_stop_all();
 	instance_activate_all();
-	layer_destroy(global.pause_layer);
 	room_goto(room_id);
 	obj_gameOverMenu_dialog.visible = true;
 	

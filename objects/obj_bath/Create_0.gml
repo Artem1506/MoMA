@@ -4,5 +4,9 @@
 visible = false;
 
 itemName = "Винишко";
-//type = "none"; 
-itemIcoName = spr_botle;
+
+itemData = 
+{
+	itemIcoName : sprite_get_name(spr_botle),
+	itemObject : object_get_name(obj_botle)
+};
