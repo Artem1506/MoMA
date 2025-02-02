@@ -7,11 +7,13 @@ if (!layer_get_visible(BG_id)) {
 	visible = true; 
 }
 
-if (obj_dialog_1_4.dialog_action == "add_money") {
+if (instance_exists(obj_dialog_1_4) && 
+obj_dialog_1_4.dialog_action == "add_money") {
 	global.playerMoney = 50;
 }
 
-if (obj_dialog_1_4.dialog_action == "leave") {
+if (instance_exists(obj_dialog_1_4) && 
+obj_dialog_1_4.dialog_action == "leave") {
 	is_moving = true }
 if (is_moving) {
 	sprite_index = spr_sebas_back; 

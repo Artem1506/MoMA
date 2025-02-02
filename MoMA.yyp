@@ -277,6 +277,7 @@
     {"id":{"name":"spr_v2PlayerStayR","path":"sprites/spr_v2PlayerStayR/spr_v2PlayerStayR.yy",},},
     {"id":{"name":"spr_v2PlayerWalkL","path":"sprites/spr_v2PlayerWalkL/spr_v2PlayerWalkL.yy",},},
     {"id":{"name":"spr_v2PlayerWalkR","path":"sprites/spr_v2PlayerWalkR/spr_v2PlayerWalkR.yy",},},
+    {"id":{"name":"spr_vertMask_save","path":"sprites/spr_vertMask_save/spr_vertMask_save.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

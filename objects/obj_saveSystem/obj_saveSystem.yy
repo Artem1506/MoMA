@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_diagonalMask",
-    "path":"sprites/spr_diagonalMask/spr_diagonalMask.yy",
+    "name":"spr_vertMask_save",
+    "path":"sprites/spr_vertMask_save/spr_vertMask_save.yy",
   },
   "spriteMaskId":null,
   "visible":true,
