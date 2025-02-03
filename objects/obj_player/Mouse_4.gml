@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-global.playerHp --;
+ show_debug_message(is_string(global.playerHp))
+ 

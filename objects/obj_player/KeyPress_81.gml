@@ -1,15 +1,21 @@
 /// @description drink vine
 // You can write your code in this editor
 
-var l_hand = obj_inventory.inventory_cells[1];
+var slot = -1;
+var cell;
 
-if (l_hand.item != undefined && l_hand.item.itemName == "Вино") {
+for (var i = 0; i < array_length_1d(obj_inventory.inventory_cells); i++) {
+    cell = obj_inventory.inventory_cells[i];
+    if (cell.itemData.itemObject == "obj_botle") {  
+		haveBotle = true;
+		slot = i;
+        break;
+	}
+}
+if (haveBotle == true) {
 	sc_apiPost(object_get_name(object_index), "drink");
-	global.playerHp ++
-	l_hand.item = undefined;
-	l_hand.item = obj_botleEmpty;
-    l_hand.cell_type = obj_botle.type; // хз зачем это делать но без этого не работает
-	l_hand.itemIco = spr_botleEmpty;
-	
-	
+	global.playerHp ++ ;
+	obj_inventory.inventory_cells[slot].itemData = {
+			itemIcoName : spr_botleEmpty,
+			itemObject : obj_botleEmpty }
 }

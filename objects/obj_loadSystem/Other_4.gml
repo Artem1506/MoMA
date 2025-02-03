@@ -15,9 +15,9 @@ if (global.is_loaded == true) {
 	var playerMission = ini_read_string("player", "mission", false);
 	global.mission_isDone = base64_decode(playerMission);
 	var playerHp = ini_read_string("player", "hp", 2);
-	global.playerHp = base64_decode(playerHp);
+	global.playerHp = real(base64_decode(playerHp));
 	var playerMoney = ini_read_string("player", "money", 0);
-	global.playerMoney = base64_decode(playerMoney);
+	global.playerMoney = real(base64_decode(playerMoney));
 	global.death = ini_read_real("player", "death", 0);
 
 	var cells_count = array_length_1d(obj_inventory.inventory_cells);
