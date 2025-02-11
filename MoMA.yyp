@@ -128,6 +128,7 @@
     {"id":{"name":"lvl_apart","path":"rooms/lvl_apart/lvl_apart.yy",},},
     {"id":{"name":"lvl_cut_intro","path":"rooms/lvl_cut_intro/lvl_cut_intro.yy",},},
     {"id":{"name":"lvl_startPage","path":"rooms/lvl_startPage/lvl_startPage.yy",},},
+    {"id":{"name":"lvl_street","path":"rooms/lvl_street/lvl_street.yy",},},
     {"id":{"name":"sc_apiPost","path":"scripts/sc_apiPost/sc_apiPost.yy",},},
     {"id":{"name":"sc_loadDialog","path":"scripts/sc_loadDialog/sc_loadDialog.yy",},},
     {"id":{"name":"sc_loadSavedData","path":"scripts/sc_loadSavedData/sc_loadSavedData.yy",},},
@@ -245,6 +246,7 @@
     {"id":{"name":"spr_inventory","path":"sprites/spr_inventory/spr_inventory.yy",},},
     {"id":{"name":"spr_inventoryBg","path":"sprites/spr_inventoryBg/spr_inventoryBg.yy",},},
     {"id":{"name":"spr_key","path":"sprites/spr_key/spr_key.yy",},},
+    {"id":{"name":"spr_keymap_BG","path":"sprites/spr_keymap_BG/spr_keymap_BG.yy",},},
     {"id":{"name":"spr_lamp_off","path":"sprites/spr_lamp_off/spr_lamp_off.yy",},},
     {"id":{"name":"spr_lamp_on","path":"sprites/spr_lamp_on/spr_lamp_on.yy",},},
     {"id":{"name":"spr_lampMarker_off","path":"sprites/spr_lampMarker_off/spr_lampMarker_off.yy",},},
@@ -285,6 +287,7 @@
     {"roomId":{"name":"lvl_startPage","path":"rooms/lvl_startPage/lvl_startPage.yy",},},
     {"roomId":{"name":"lvl_apart","path":"rooms/lvl_apart/lvl_apart.yy",},},
     {"roomId":{"name":"lvl_cut_intro","path":"rooms/lvl_cut_intro/lvl_cut_intro.yy",},},
+    {"roomId":{"name":"lvl_street","path":"rooms/lvl_street/lvl_street.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"spr_v1PlayerStayR",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":62,
   "bbox_left":20,
   "bbox_right":49,
