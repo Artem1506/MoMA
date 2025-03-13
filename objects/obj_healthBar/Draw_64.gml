@@ -18,3 +18,4 @@ if (global.playerHp != undefined || global.playerHp != noone) {
 	}
 }
 
+

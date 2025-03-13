@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_inventory",
+  "%Name":"obj_enemy_parent",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":73,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_inventory",
+  "name":"obj_enemy_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"hud_element",
-    "path":"folders/Objects/hud_element.yy",
+    "name":"enemy",
+    "path":"folders/Objects/characters/enemy.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_inventory",
-    "path":"sprites/spr_inventory/spr_inventory.yy",
+    "name":"spr_sebas_back",
+    "path":"sprites/spr_sebas_back/spr_sebas_back.yy",
   },
   "spriteMaskId":null,
   "visible":true,

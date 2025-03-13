@@ -9,5 +9,3 @@ draw_rectangle(x, y, x+41, y-5-y2, false)
 draw_set_alpha(1)
 
 draw_self()
-
-//show_debug_message(string(global.playerNoiseLvl))
