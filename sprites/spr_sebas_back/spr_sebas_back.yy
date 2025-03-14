@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"spr_sebas_back",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":59,
   "bbox_left":4,
   "bbox_right":27,

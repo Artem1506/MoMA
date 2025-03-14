@@ -107,6 +107,7 @@
     {"id":{"name":"obj_dragItem","path":"objects/obj_dragItem/obj_dragItem.yy",},},
     {"id":{"name":"obj_end_lvl","path":"objects/obj_end_lvl/obj_end_lvl.yy",},},
     {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
+    {"id":{"name":"obj_game_grid","path":"objects/obj_game_grid/obj_game_grid.yy",},},
     {"id":{"name":"obj_gameOverMenu_dialog","path":"objects/obj_gameOverMenu_dialog/obj_gameOverMenu_dialog.yy",},},
     {"id":{"name":"obj_gameOverMenu","path":"objects/obj_gameOverMenu/obj_gameOverMenu.yy",},},
     {"id":{"name":"obj_healthBar","path":"objects/obj_healthBar/obj_healthBar.yy",},},
