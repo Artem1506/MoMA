@@ -30,6 +30,7 @@ instance_exists(obj_dialog_1_5)) {
 		obj_dialog_1_5.current_node = "node_2";}
 	if (next_lvl == true) {
 	//audio_play_sound() эпичная музычка
-		room_goto(lvl_startPage); 
+		//room_goto(lvl_startPage); 
+		room_goto_next(); 
 		//тут переход в комнату со статистикой или в слой со статистикой
 	}
