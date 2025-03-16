@@ -1,0 +1,18 @@
+{
+  "$GMPath":"",
+  "%Name":"p_lvl2_enemy1",
+  "closed":false,
+  "kind":0,
+  "name":"p_lvl2_enemy1",
+  "parent":{
+    "name":"lvl_2",
+    "path":"folders/Paths/lvl_2.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":368.55884,"y":172.58325,},
+    {"speed":100.0,"x":569.0464,"y":172.27661,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

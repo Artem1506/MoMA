@@ -9,6 +9,8 @@ global.playerIsInteract = false;
 global.playerNoiseLvl = 0;
 playerSpeed = 1;
 playerRest = true;
+is_attack = false;
+attack_cooldown = false;
 
 global.playerAgroDistance = 0;
 

@@ -47,3 +47,11 @@ if (!keyboard_check(vk_control) && !keyboard_check(vk_shift)) {
 	if (!place_meeting(x,y,obj_lamp1)) {
 		global.playerIsShadow = true;
 	}
+
+if (attack_cooldown == true) {
+	is_attack = false;
+    playerSpeed = 0;
+	mouse_clear(mb_left);
+} 
+//show_debug_message(string(is_attack))
+//show_debug_message(string(attack_cooldown))
