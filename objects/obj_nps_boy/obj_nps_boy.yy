@@ -1,21 +1,23 @@
 {
   "$GMObject":"",
-  "%Name":"obj_nps_parent",
+  "%Name":"obj_nps_boy",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_nps_parent",
+  "name":"obj_nps_boy",
   "overriddenProperties":[],
   "parent":{
     "name":"NPC",
     "path":"folders/Objects/characters/NPC.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_nps_parent",
+    "path":"objects/obj_nps_parent/obj_nps_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,7 +35,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_v2PlayerWalkR",
+    "path":"sprites/spr_v2PlayerWalkR/spr_v2PlayerWalkR.yy",
+  },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
