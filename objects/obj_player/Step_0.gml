@@ -49,7 +49,7 @@ if (!keyboard_check(vk_control) && !keyboard_check(vk_shift)) {
 	}
 
 if (attack_cooldown == true) {
-	is_attack = false;
+	//is_attack = false;
     playerSpeed = 0;
 	mouse_clear(mb_left);
 } 

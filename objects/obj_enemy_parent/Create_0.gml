@@ -21,3 +21,5 @@ path_start(p_lvl2_enemy1, patrol_speed,path_action_reverse, true)
 path = path_add();
 calc_path_delay = 30;
 calc_path_timer = irandom(60);
+
+instance_create_layer(x, y+10, "Instances", obj_trase);

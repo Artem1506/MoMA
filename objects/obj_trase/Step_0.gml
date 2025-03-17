@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (object_exists(obj_enemy_parent)) {
+if (instance_exists(obj_enemy_parent)) {
 	x = obj_enemy_parent.x;
 	y = obj_enemy_parent.y+10;
 

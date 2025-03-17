@@ -16,7 +16,6 @@
     {"name":"inst_70DB69A8","path":"rooms/lvl_street/lvl_street.yy",},
     {"name":"inst_6DE13A59","path":"rooms/lvl_street/lvl_street.yy",},
     {"name":"inst_1B08C133","path":"rooms/lvl_street/lvl_street.yy",},
-    {"name":"inst_1C915EBE","path":"rooms/lvl_street/lvl_street.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -34,7 +33,6 @@
         {"$GMRInstance":"v1","%Name":"inst_70DB69A8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_70DB69A8","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":300.0,"y":178.0,},
         {"$GMRInstance":"v1","%Name":"inst_6DE13A59","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6DE13A59","objectId":{"name":"obj_game_grid","path":"objects/obj_game_grid/obj_game_grid.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4.0,"y":0.0,},
         {"$GMRInstance":"v1","%Name":"inst_1B08C133","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1B08C133","objectId":{"name":"obj_blockVolium_horizontal","path":"objects/obj_blockVolium_horizontal/obj_blockVolium_horizontal.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.65625,"scaleY":1.0,"x":1010.0,"y":189.0,},
-        {"$GMRInstance":"v1","%Name":"inst_1C915EBE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1C915EBE","objectId":{"name":"obj_trase","path":"objects/obj_trase/obj_trase.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":42.0,"y":0.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_lvl_2_1_BG","path":"sprites/spr_lvl_2_1_BG/spr_lvl_2_1_BG.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
