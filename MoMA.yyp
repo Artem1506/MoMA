@@ -205,6 +205,7 @@
     {"id":{"name":"spr_botle","path":"sprites/spr_botle/spr_botle.yy",},},
     {"id":{"name":"spr_botleBroked","path":"sprites/spr_botleBroked/spr_botleBroked.yy",},},
     {"id":{"name":"spr_botleEmpty","path":"sprites/spr_botleEmpty/spr_botleEmpty.yy",},},
+    {"id":{"name":"spr_boyFace","path":"sprites/spr_boyFace/spr_boyFace.yy",},},
     {"id":{"name":"spr_check_coin","path":"sprites/spr_check_coin/spr_check_coin.yy",},},
     {"id":{"name":"spr_checkBad_coin","path":"sprites/spr_checkBad_coin/spr_checkBad_coin.yy",},},
     {"id":{"name":"spr_checkGood_coin","path":"sprites/spr_checkGood_coin/spr_checkGood_coin.yy",},},

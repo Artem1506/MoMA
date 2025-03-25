@@ -1,5 +1,5 @@
 /// @description Draw dialogue and choices
-/*
+
 draw_set_font(f_rus_default);
 
 var node = variable_struct_get(dialog_data, current_node);
