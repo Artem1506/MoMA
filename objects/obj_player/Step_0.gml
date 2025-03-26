@@ -43,8 +43,8 @@ if (keyboard_check(vk_control)) {
 if (!keyboard_check(vk_control) && !keyboard_check(vk_shift)) { 
 	playerSpeed = 1; }
 
-// изменение переменной на свету или в тени
-	if (!place_meeting(x,y,obj_lamp1)) {
+// изменение переменной на свету или в тени (слишклм жесткая зависимость) todo
+	if (!place_meeting(x,y,obj_lamp1) && obj_moon.current_spr != spr_moon_lvl2_1) {
 		global.playerIsShadow = true;
 	}
 
