@@ -11,10 +11,11 @@ ready_attack = true
 HP = 3;
 patrol_speed = 0.5
 move_speed = 1;
-attack_dis = 16;
+attack_dis = 32;
 attack_delay = 30;
 attack_cooldown = 360;
 vis_dis = 250;
+stun_time = 30;
 
 path_start(p_lvl2_enemy1, patrol_speed,path_action_reverse, true)
 

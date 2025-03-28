@@ -1,20 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cloud_4",
+  "%Name":"obj_alertBar",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_cloud_4",
+  "name":"obj_alertBar",
   "overriddenProperties":[],
   "parent":{
-    "name":"lvl_objects",
-    "path":"folders/Objects/lvl_objects.yy",
+    "name":"hud_element",
+    "path":"folders/Objects/hud_element.yy",
   },
-  "parentObjectId":{
-    "name":"obj_cloud_parent",
-    "path":"objects/obj_cloud_parent/obj_cloud_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_cloud_4",
-    "path":"sprites/spr_cloud_4/spr_cloud_4.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

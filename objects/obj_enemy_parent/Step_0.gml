@@ -4,14 +4,15 @@
 if (HP <= 0) {
 	instance_destroy()
 }
-
+show_debug_message(string(move_speed))
 pre_x = xprevious;
 
 if (is_agresive == true) {
-	alert_dis = global.playerAgroDistance * 20;
+	alert_dis = (global.playerNoiseLvl * global.playerNoiseLvl * 2);
+	
 	check_player();
-	if (attack_dis >= distance_to_object(obj_player) && ready_attack == true) {
-		sprite_index = spr_sebas_stay;
+	if (alert == true && attack_dis >= distance_to_object(obj_player) && ready_attack == true) {
+		sprite_index = spr_playerStayR;
 		move_speed = 0;
 		ready_attack = false
 		alarm[0] = attack_delay;

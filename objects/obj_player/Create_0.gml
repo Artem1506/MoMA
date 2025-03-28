@@ -10,6 +10,7 @@ global.playerNoiseLvl = 0;
 playerSpeed = 1;
 playerRest = true;
 is_attack = false;
+is_kick = false;
 attack_cooldown = false;
 
 global.playerAgroDistance = 0;

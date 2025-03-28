@@ -79,6 +79,7 @@
     {"id":{"name":"f_rus_defaultBig","path":"fonts/f_rus_defaultBig/f_rus_defaultBig.yy",},},
     {"id":{"name":"n_info","path":"notes/n_info/n_info.yy",},},
     {"id":{"name":"n_todo","path":"notes/n_todo/n_todo.yy",},},
+    {"id":{"name":"obj_alertBar","path":"objects/obj_alertBar/obj_alertBar.yy",},},
     {"id":{"name":"obj_audioManager_menu","path":"objects/obj_audioManager_menu/obj_audioManager_menu.yy",},},
     {"id":{"name":"obj_bath","path":"objects/obj_bath/obj_bath.yy",},},
     {"id":{"name":"obj_blockVolium_diagonal","path":"objects/obj_blockVolium_diagonal/obj_blockVolium_diagonal.yy",},},
