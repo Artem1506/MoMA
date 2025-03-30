@@ -4,7 +4,7 @@
 if (HP <= 0) {
 	instance_destroy()
 }
-show_debug_message(string(move_speed))
+
 pre_x = xprevious;
 
 if (is_agresive == true) {

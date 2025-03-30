@@ -3,12 +3,16 @@
 
 if (obj_player.is_attack == true) {
 	if (alert == true) {
+		partSys_blood = part_system_create(ps_blood_1);
+		part_system_position(partSys_blood, self.x, self.y,)
 		HP -= 1;
 		obj_player.is_attack = false
 		draw_text(x, y, "-1")
 		show_debug_message("!!!!!!!!!!!")
 	}
 	if (alert == false) {
+		partSys_blood_crit = part_system_create(ps_blood_2);
+		part_system_position(partSys_blood_crit, self.x, self.y,)
 		HP -= 3;obj_player.is_attack = false
 		draw_text(x, y, "Crit!");
 		show_debug_message("CRIT!!!!!!!!!!!")

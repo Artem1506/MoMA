@@ -143,6 +143,8 @@
     {"id":{"name":"obj_saveSystem","path":"objects/obj_saveSystem/obj_saveSystem.yy",},},
     {"id":{"name":"obj_stick","path":"objects/obj_stick/obj_stick.yy",},},
     {"id":{"name":"obj_trase","path":"objects/obj_trase/obj_trase.yy",},},
+    {"id":{"name":"ps_blood_1","path":"particles/ps_blood_1/ps_blood_1.yy",},},
+    {"id":{"name":"ps_blood_2","path":"particles/ps_blood_2/ps_blood_2.yy",},},
     {"id":{"name":"p_lvl2_enemy1","path":"paths/p_lvl2_enemy1/p_lvl2_enemy1.yy",},},
     {"id":{"name":"lvl_apart","path":"rooms/lvl_apart/lvl_apart.yy",},},
     {"id":{"name":"lvl_cut_intro","path":"rooms/lvl_cut_intro/lvl_cut_intro.yy",},},
