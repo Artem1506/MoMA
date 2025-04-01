@@ -3,8 +3,8 @@
 
 if (attack_dis >= distance_to_object(obj_player)) {
 	hit = true;
-	cam_siz = 0.8;
-	cam_alph = 0.5;
+	cam_siz = 0.9;
+	anim_index = 0;
 	show_debug_message("hit")
 	global.playerHp -= 1;
 }

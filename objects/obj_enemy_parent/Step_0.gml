@@ -17,5 +17,4 @@ if (is_agresive == true) {
 		ready_attack = false
 		alarm[0] = attack_delay;
 	}
-		
 }

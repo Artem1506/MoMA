@@ -2,18 +2,21 @@
 // You can write your code in this editor
 
 cam_siz = 1;
-cam_alph = 0;
+anim_index = noone;
 
 solid = true;
 is_agresive = true;
+//is_agresive = false;
 alert = false;
 alert_dis = 1;
 ready_attack = true
 hit = false;
 
 HP = 33;
-patrol_speed = 0.5
-move_speed = 1;
+//patrol_speed = 0.5
+patrol_speed = 0
+//move_speed = 1;
+move_speed = 0;
 attack_dis = 32;
 attack_delay = 30;
 attack_cooldown = 360;
