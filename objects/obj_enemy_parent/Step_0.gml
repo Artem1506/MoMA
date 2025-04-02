@@ -2,7 +2,13 @@
 // You can write your code in this editor
 
 if (HP <= 0) {
-	instance_destroy()
+	move_speed = 0
+	sprite_index = a_death
+	audio_play_sound(s_death, 10, false)
+	if (image_index >= 7) {
+		solid = false;
+		instance_destroy()
+	}
 }
 
 pre_x = xprevious;

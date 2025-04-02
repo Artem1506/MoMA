@@ -25,6 +25,7 @@
     {"name":"inst_5F4DBF4D","path":"rooms/lvl_street/lvl_street.yy",},
     {"name":"inst_BB3615","path":"rooms/lvl_street/lvl_street.yy",},
     {"name":"inst_24B55CD5","path":"rooms/lvl_street/lvl_street.yy",},
+    {"name":"inst_6134FEB7","path":"rooms/lvl_street/lvl_street.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -55,6 +56,7 @@
         {"$GMRInstance":"v1","%Name":"inst_70DB69A8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_70DB69A8","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":300.0,"y":178.0,},
         {"$GMRInstance":"v1","%Name":"inst_6DE13A59","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6DE13A59","objectId":{"name":"obj_game_grid","path":"objects/obj_game_grid/obj_game_grid.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":70.0,"y":0.0,},
         {"$GMRInstance":"v1","%Name":"inst_59134B16","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_59134B16","objectId":{"name":"obj_nps_boy","path":"objects/obj_nps_boy/obj_nps_boy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":817.0,"y":198.0,},
+        {"$GMRInstance":"v1","%Name":"inst_6134FEB7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6134FEB7","objectId":{"name":"obj_horse","path":"objects/obj_horse/obj_horse.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-191.0,"y":192.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_lvl_2_1_BG","path":"sprites/spr_lvl_2_1_BG/spr_lvl_2_1_BG.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

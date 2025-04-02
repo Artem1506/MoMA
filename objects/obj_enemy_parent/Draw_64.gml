@@ -6,7 +6,6 @@ if (hit == true) {
 	camera_set_view_size(view_camera[0], 682*cam_siz, 384*cam_siz)
 	
 	if (anim_index != noone && anim_index < 32) { anim_index += 1 }
-	show_debug_message(string(anim_index))
 	if (anim_index < 32) { 
 		draw_sprite(spr_player_damage_in, anim_index, 0, 0); 
 	}
