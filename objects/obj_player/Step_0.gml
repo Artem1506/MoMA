@@ -14,6 +14,15 @@ if (keyboard_check(ord("S"))) { y += 1; }
 if (keyboard_check(ord("E"))) { global.playerIsInteract = true; }
 if (keyboard_check_released(ord("E"))) { global.playerIsInteract = false; }
 
+if (keyboard_check_pressed(ord("L"))) {
+	if (attack_cooldown == false) {
+		is_attack = true;
+		attack_cooldown = true;
+		alarm[3] = 1;
+		alarm[2] = 60;
+	}
+}
+
 //if (!keyboard_check(ord("A")) || !keyboard_check(ord("D"))) { playerSpeed = 0 
 //	} else { playerSpeed = 1 }
 /*

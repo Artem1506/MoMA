@@ -10,13 +10,19 @@ alert = false;
 alert_dis = 1;
 ready_attack = true
 hit = false;
+move_direction = undefined;
+attacking = false;
+incoming_dmg = false;
 
-HP = 1;
-patrol_speed = 0.5
-move_speed = 1;
-attack_dis = 32;
-attack_delay = 30;
-attack_cooldown = 360;
+HP = 111;
+//patrol_speed = 0.5
+patrol_speed = 0
+//move_speed = 1;
+move_speed = 0;
+attack_dis = 48;
+//attack_delay = 30; todo подумать над зависимостью что типа скорость комнаты деленное на колличество кадров
+attack_delay = 55;
+attack_cooldown = 160;
 vis_dis = 250;
 stun_time = 30;
 
@@ -28,9 +34,9 @@ calc_path_timer = irandom(60);
 
 instance_create_layer(x, y+10, "Instances", obj_trase);
 
-a_idle = noone;
-a_walk = noone;
-a_damage = noone;
+a_idle = spr_swordman_idle;
+a_walk = spr_swordman_walk;
+a_damage = spr_swordman_damage;
 a_death = spr_swordman_death;
 a_attack_1 = noone;
 a_attack_2 = noone;
@@ -42,7 +48,7 @@ s_walk = noone; //звук шагов хз надо ли
 s_damage = noone; //получение урона
 s_damage_crit = snd_wilhelm_scream; 
 s_death = noone; //крик+выдох
-a_attack_1 = noone; 
+a_attack_1 = spr_swordman_attack_slow; 
 a_attack_2 = noone;
 a_attack_3 = noone;
 a_other = noone;

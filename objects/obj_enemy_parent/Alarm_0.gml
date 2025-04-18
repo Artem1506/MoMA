@@ -9,7 +9,8 @@ if (attack_dis >= distance_to_object(obj_player)) {
 	global.playerHp -= 1;
 }
 	move_speed = 1;
+	attacking = false;
 	//hit = false;
-	sprite_index = spr_sebas_back
+	sprite_index = spr_swordman_idle
 	show_debug_message("cooldown")
 	alarm[1] = attack_cooldown;

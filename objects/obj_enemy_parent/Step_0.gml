@@ -3,10 +3,12 @@
 
 if (HP <= 0) {
 	move_speed = 0
-	sprite_index = a_death
-	audio_play_sound(s_death, 10, false)
-	if (image_index >= 7) {
-		solid = false;
+	solid = false
+	//image_index = 0
+	sprite_index = a_death;
+	//audio_play_sound(s_death, 10, false)
+	if (image_index >= 6.5) {
+		//solid = false;
 		instance_destroy()
 	}
 }
@@ -18,9 +20,13 @@ if (is_agresive == true) {
 	
 	check_player();
 	if (alert == true && attack_dis >= distance_to_object(obj_player) && ready_attack == true) {
-		sprite_index = spr_playerStayR;
-		move_speed = 0;
+		attacking = true;
 		ready_attack = false
+		//draw_sprite(a_attack_1, anim_index, x,y)
+		image_index = 0;
+		sprite_index = a_attack_1;
+		move_speed = 0;
+		ready_attack = false;
 		alarm[0] = attack_delay;
 	}
 }
