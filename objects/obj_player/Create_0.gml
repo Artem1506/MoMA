@@ -12,9 +12,12 @@ playerRest = true;
 is_attack = false;
 is_kick = false;
 attack_cooldown = false;
+attack_cooldown_alarm = image_index / 6; //какаята задержка зависящая от максимального кол-ва кадров в анимации
+
 
 global.playerAgroDistance = 0;
 
+/*
 animStayR = spr_v1PlayerStayR;
 animStayL = spr_v1PlayerStayL;
 animWalkR = spr_v2PlayerWalkR;

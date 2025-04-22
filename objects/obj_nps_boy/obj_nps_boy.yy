@@ -35,10 +35,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":{
-    "name":"spr_v2PlayerWalkR",
-    "path":"sprites/spr_v2PlayerWalkR/spr_v2PlayerWalkR.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
