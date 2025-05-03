@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+/*
 if (incoming_dmg == true && attacking == false) { sprite_index = a_damage }
 
 if (obj_player.is_attack == true) {

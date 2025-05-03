@@ -2,4 +2,5 @@
 // You can write your code in this editor
 
 attack_cooldown = false;
+//is_attack = false;
 

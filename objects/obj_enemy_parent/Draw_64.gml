@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description dmg to player
 // You can write your code in this editor
 
 if (hit == true) {

@@ -15,10 +15,10 @@ attacking = false;
 incoming_dmg = false;
 
 HP = 111;
-//patrol_speed = 0.5
-patrol_speed = 0
-//move_speed = 1;
-move_speed = 0;
+patrol_speed = 0.5
+//patrol_speed = 0
+move_speed = 1;
+//move_speed = 0;
 attack_dis = 48;
 //attack_delay = 30; todo подумать над зависимостью что типа скорость комнаты деленное на колличество кадров
 attack_delay = 55;
