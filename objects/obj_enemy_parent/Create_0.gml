@@ -15,8 +15,8 @@ attacking = false;
 incoming_dmg = false;
 
 HP = 111;
-patrol_speed = 0.5
-//patrol_speed = 0
+//patrol_speed = 0.5
+patrol_speed = 0
 move_speed = 1;
 //move_speed = 0;
 attack_dis = 48;
@@ -24,7 +24,7 @@ attack_dis = 48;
 attack_delay = 55;
 attack_cooldown = 160;
 vis_dis = 250;
-stun_time = 30;
+stun_time = 300;
 
 path_start(p_lvl2_enemy1, patrol_speed, path_action_reverse, true)
 

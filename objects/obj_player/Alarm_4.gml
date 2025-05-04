@@ -3,7 +3,7 @@
 
 if (!keyboard_check(vk_anykey) && !mouse_check_button(mb_any)) {
 	afk = true;
-	show_debug_message("!!!!!!!!!!!!!!!!!!!!")
+	show_debug_message("afk")
     randomize();
 	curent_idle = choose(spr_player_idle1, spr_player_idle2);
     sprite_index = curent_idle;

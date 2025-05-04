@@ -1,7 +1,7 @@
 /// @description attack delay
 // You can write your code in this editor
 
-if (attack_dis >= distance_to_object(obj_player)) {
+if (attack_dis >= distance_to_object(obj_player) && attacking == true) {
 	hit = true;
 	cam_siz = 0.9;
 	anim_index = 0;

@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-show_debug_message(string(is_attack))
-
 if (!keyboard_check(vk_shift) && !keyboard_check(vk_control) && afk == false && attack_cooldown == false) {
 	sprite_index = spr_player_idle0;
 	if (keyboard_check_released(ord("A")) || keyboard_check_released(ord("D"))) { 
@@ -26,7 +24,7 @@ if (keyboard_check(ord("E"))) { global.playerIsInteract = true;
 if (keyboard_check_released(ord("E"))) { global.playerIsInteract = false; }
 
 if (keyboard_check_pressed(ord("L"))) {
-	if (attack_cooldown == false) {
+	if (attack_cooldown == false && !keyboard_check(vk_control)) {
 		is_attack = true;
 		attack_cooldown = true;
 		alarm[3] = 2;
@@ -34,8 +32,26 @@ if (keyboard_check_pressed(ord("L"))) {
 		instance_create_layer(x, y, "HUD", obj_weapon)
 		alarm[2] = obj_weapon.weapon_spd;
 	}
+	if (attack_cooldown == false && keyboard_check(vk_control)) {
+		is_attack = true;
+		attack_cooldown = true;
+		alarm[3] = 2;
+		sprite_index = spr_player_sneekAttack;
+		instance_create_layer(x, y, "HUD", obj_weapon)
+		alarm[2] = obj_weapon.weapon_spd
+	}
 } 
 
+if (keyboard_check_pressed(ord("F"))) {
+	if (attack_cooldown == false) {
+		is_kick = true;
+		attack_cooldown = true;
+		alarm[3] = 2;
+		sprite_index = spr_player_kick;
+		instance_create_layer(x, y, "HUD", obj_weapon)
+		alarm[2] = 30;	
+	}
+}
 //if (!keyboard_check(ord("A")) || !keyboard_check(ord("D"))) { playerSpeed = 0 
 //	} else { playerSpeed = 1 }
 /*
@@ -73,7 +89,8 @@ if (keyboard_check(vk_control)
 && !keyboard_check(ord("W")) 
 && !keyboard_check(ord("A")) 
 && !keyboard_check(ord("S")) 
-&& !keyboard_check(ord("D"))) {
+&& !keyboard_check(ord("D"))
+&& attack_cooldown == false) {
 	sprite_index = spr_player_down_idle;
 }
 
@@ -82,7 +99,6 @@ if (keyboard_check(vk_control)) {
 	|| keyboard_check(ord("D")) 
 	|| keyboard_check(ord("W")) 
 	|| keyboard_check(ord("S"))) {
-		show_debug_message(string(image_index))
 		sprite_index = spr_player_down_move; 
 		if (image_index > 3) { playerSpeed = 1; }
 		else { playerSpeed = 0.2 }

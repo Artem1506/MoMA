@@ -16,7 +16,7 @@ if (HP <= 0) {
 pre_x = xprevious;
 
 if (is_agresive == true) {
-	alert_dis = (global.playerNoiseLvl * global.playerNoiseLvl * 2);
+	//alert_dis = (global.playerNoiseLvl * global.playerNoiseLvl * 2);
 	
 	check_player();
 	if (alert == true && attack_dis >= distance_to_object(obj_player) && ready_attack == true) {
@@ -26,7 +26,7 @@ if (is_agresive == true) {
 		image_index = 0;
 		sprite_index = a_attack_1;
 		move_speed = 0;
-		ready_attack = false;
+		//ready_attack = false;
 		alarm[0] = attack_delay;
 	}
 }

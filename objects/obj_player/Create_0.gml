@@ -7,6 +7,7 @@ global.playerMoney = 0;
 global.playerIsShadow = true;
 global.playerIsInteract = false;
 global.playerNoiseLvl = 0;
+
 noiseLvlCoeff = 0;
 playerSpeed = 1;
 playerRest = true;
