@@ -1,6 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//show_debug_message(string(obj_trase.id))
+
+
+if (id.image_xscale == 1) { obj_trase.x = id.x+16; }
+if (id.image_xscale == -1) { obj_trase.x = id.x-16; }
+obj_trase.y = id.y-16;
+show_debug_message(string(obj_trase.x))
+
+if (place_meeting(x, y, obj_enemy_parent)) {
+    x = xprevious;
+    y = yprevious;
+}
+
+attack_delay = game_get_speed(gamespeed_fps) / 10 * image_number
+
 if (HP <= 0) {
 	move_speed = 0
 	solid = false
@@ -30,3 +45,4 @@ if (is_agresive == true) {
 		alarm[0] = attack_delay;
 	}
 }
+

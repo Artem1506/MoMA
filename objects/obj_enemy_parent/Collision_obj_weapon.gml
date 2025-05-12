@@ -14,7 +14,7 @@ if (obj_player.is_attack == true) {
 		show_debug_message("!!!!!!!!!!!")
 		alarm[3] = 18;
 	}
-	if (alert == false) {
+	if (alert == false && keyboard_check(vk_control)) {
 		incoming_dmg = true;
 		//partSys_blood_crit = part_system_create(ps_blood_2);
 		//part_system_position(partSys_blood_crit, self.x, self.y,)

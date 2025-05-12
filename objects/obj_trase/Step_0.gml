@@ -2,11 +2,12 @@
 // You can write your code in this editor
 
 if (instance_exists(obj_enemy_parent)) {
-	image_xscale = obj_enemy_parent.image_xscale;
+	/*
+	image_xscale = obj_enemy_parent.id.image_xscale;
 	y = obj_enemy_parent.y-16;
-	if (image_xscale == 1) { x = obj_enemy_parent.x+16; }
+	if (image_xscale == 1) { x = obj_enemy_parent.id.x+16; }
 	if (image_xscale == -1) { x = obj_enemy_parent.x-16; }
-
+	*/
 	if (!collision_line(x, y,obj_player.x, obj_player.y, obj_blockVolium_horizontal, false, true) &&
 	!collision_line(x, y,obj_player.x, obj_player.y, obj_enemy_parent, false, true)) {
 		var distance = point_distance(x, y, obj_player.x, obj_player.y);
@@ -15,3 +16,5 @@ if (instance_exists(obj_enemy_parent)) {
 		}
 	}
 } else { instance_destroy() }
+
+show_debug_message(string(self.x))

@@ -5,8 +5,9 @@ draw_self();
 
 draw_set_font(f_rus_default);
 draw_set_color(c_red);
-draw_text(x, y, "enemy HP" + string(obj_enemy_parent.HP))
-
+if (instance_exists(obj_enemy_parent)) {
+	draw_text(x, y, "enemy HP" + string(obj_enemy_parent.HP))
+}
 /*
 draw_text(x,y,"HP" + string(global.playerHp));
 draw_text(x,y+15,"isInteract" + string(global.playerIsInteract));
